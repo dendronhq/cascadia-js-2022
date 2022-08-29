@@ -2,14 +2,14 @@
 id: tejas-kumar
 title: Doing Data as a Frontend Developer
 desc: ''
-updated: 1661807134648
-created: 1661807134648
+updated: 1661812625960
+created: 1661812625960
 tags:
   - sqlite
   - postgres
   - mongodb
   - redis
-  - node.js
+  - node-js
 location: 'Berlin, Germany'
 uri: ''
 twitter: tejaskumar_

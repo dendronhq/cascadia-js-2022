@@ -2,12 +2,12 @@
 id: saimon-sharif
 title: A Few Good Design Patterns
 desc: ''
-updated: 1661807134639
-created: 1661807134639
+updated: 1661812625956
+created: 1661812625956
 tags:
-  - cognitive biases
-  - engineering career growth
-  - design patterns
+  - cognitive-biases
+  - engineering-career-growth
+  - design-patterns
 location: 'Cupertino, CA, USA'
 uri: ''
 twitter: saimonsharif

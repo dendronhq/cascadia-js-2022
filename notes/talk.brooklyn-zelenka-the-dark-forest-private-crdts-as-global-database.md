@@ -2,17 +2,17 @@
 id: brooklyn-zelenka
 title: 'The Dark Forest: Private CRDTs as Global Database'
 desc: ''
-updated: 1661807134560
-created: 1661807134560
+updated: 1661812625913
+created: 1661812625913
 tags:
   - web3
-  - distributed systems
+  - distributed-systems
   - auth
   - identity
-  - functional programming
+  - functional-programming
   - ocap
-  - formal methods
-  - vm design
+  - formal-methods
+  - vm-design
 location: 'Vancouver, BC'
 uri: ''
 twitter: expede

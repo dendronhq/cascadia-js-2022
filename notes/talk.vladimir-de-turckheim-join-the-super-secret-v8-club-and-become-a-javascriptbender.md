@@ -2,15 +2,15 @@
 id: vladimir-de-turckheim
 title: Join the super secret V8 club and become a JavaScriptbender
 desc: ''
-updated: 1661807134658
-created: 1661807134658
+updated: 1661812625968
+created: 1661812625968
 tags:
-  - V8
-  - memory leaks
+  - v8
+  - memory-leaks
   - profiling
-  - shadow classes
+  - shadow-classes
   - chrome
-  - node.js
+  - node-js
   - deno
 location: 'Levallois Perret, France'
 uri: ''

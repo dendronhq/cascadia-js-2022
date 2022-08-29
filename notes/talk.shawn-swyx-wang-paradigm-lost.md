@@ -2,8 +2,8 @@
 id: shawn-swyx-wang
 title: Paradigm Lost
 desc: ''
-updated: 1661807134643
-created: 1661807134643
+updated: 1661812625958
+created: 1661812625958
 tags:
   - web
 location: 'Singapore, Singapore'

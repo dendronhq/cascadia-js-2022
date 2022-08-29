@@ -2,8 +2,8 @@
 id: joyce-park
 title: Rethinking Web UX with Webauthn and Project Fugu
 desc: ''
-updated: 1661807134613
-created: 1661807134613
+updated: 1661812625943
+created: 1661812625943
 tags:
   - auth
   - webauthn

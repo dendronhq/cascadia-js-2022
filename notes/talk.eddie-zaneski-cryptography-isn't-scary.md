@@ -2,12 +2,12 @@
 id: eddie-zaneski
 title: Cryptography Isn't Scary
 desc: ''
-updated: 1661807134589
-created: 1661807134589
+updated: 1661812625930
+created: 1661812625930
 tags:
   - cryptography
-  - software supply chain
-  - code signing
+  - software-supply-chain
+  - code-signing
 location: 'Denver, CO, USA'
 uri: ''
 twitter: eddiezane

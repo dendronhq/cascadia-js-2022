@@ -2,14 +2,14 @@
 id: rebecca-peltz
 title: Learning and Managing Code with Code Notebooks
 desc: ''
-updated: 1661807134635
-created: 1661807134635
+updated: 1661812625953
+created: 1661812625953
 tags:
   - microservices
-  - low code
-  - node.js
+  - low-code
+  - node-js
   - python
-  - cloud services
+  - cloud-services
   - sdk
 location: 'Wenatchee, WA, USA'
 uri: ''

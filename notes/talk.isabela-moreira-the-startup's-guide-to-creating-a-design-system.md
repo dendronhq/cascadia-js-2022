@@ -2,14 +2,14 @@
 id: isabela-moreira
 title: The Startup's Guide to Creating a Design System
 desc: ''
-updated: 1661807134603
-created: 1661807134603
+updated: 1661812625937
+created: 1661812625937
 tags:
   - figma
-  - react.js
+  - react-js
   - design
-  - design systems
-  - component libraries
+  - design-systems
+  - component-libraries
 location: 'Federal Way, WA, USA'
 uri: ''
 twitter: isabelacmor

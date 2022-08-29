@@ -2,12 +2,12 @@
 id: tiger-oakes
 title: How We Automated our Relationship
 desc: ''
-updated: 1661807134651
-created: 1661807134651
+updated: 1661812625963
+created: 1661812625963
 tags:
   - javascript
-  - node.js
-  - side projects
+  - node-js
+  - side-projects
   - hardware
   - iot
   - api

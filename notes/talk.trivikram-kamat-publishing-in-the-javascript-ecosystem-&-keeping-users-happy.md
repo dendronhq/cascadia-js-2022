@@ -2,10 +2,10 @@
 id: trivikram-kamat
 title: Publishing in the JavaScript Ecosystem & Keeping Users Happy
 desc: ''
-updated: 1661807134654
-created: 1661807134654
+updated: 1661812625966
+created: 1661812625966
 tags:
-  - node.js
+  - node-js
   - npm
   - javascript
   - commonjs

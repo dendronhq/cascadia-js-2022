@@ -94,6 +94,7 @@ publishing:
     siteHierarchies:
         - home
         - talk
+        - tags
     writeStubs: false
     siteRootDir: docs
     seo:

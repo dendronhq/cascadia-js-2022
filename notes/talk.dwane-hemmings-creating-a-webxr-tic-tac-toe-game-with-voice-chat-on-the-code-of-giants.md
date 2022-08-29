@@ -2,13 +2,13 @@
 id: dwane-hemmings
 title: Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants
 desc: ''
-updated: 1661807134584
-created: 1661807134584
+updated: 1661812625924
+created: 1661812625924
 tags:
-  - web components
+  - web-components
   - webxr
-  - virtual reality
-  - augmented reality
+  - virtual-reality
+  - augmented-reality
   - webrtc
 location: 'Orlando, FL, USA'
 uri: ''

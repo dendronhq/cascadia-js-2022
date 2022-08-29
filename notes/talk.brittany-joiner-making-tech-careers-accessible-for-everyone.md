@@ -2,8 +2,8 @@
 id: brittany-joiner
 title: Making tech careers accessible for everyone
 desc: ''
-updated: 1661807134552
-created: 1661807134552
+updated: 1661812625908
+created: 1661812625908
 tags:
   - inclusivity
   - hiring

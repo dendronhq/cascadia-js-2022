@@ -2,10 +2,10 @@
 id: ian-sutherland
 title: Zero-dependency CLIs with Node.js
 desc: ''
-updated: 1661807134596
-created: 1661807134596
+updated: 1661812625934
+created: 1661812625934
 tags:
-  - node.js
+  - node-js
   - cli
   - javascript
 location: 'Calgary, AB, Canada'

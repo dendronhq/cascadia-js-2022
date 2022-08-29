@@ -2,12 +2,12 @@
 id: brian-leroux
 title: Enhance your Functional Web Apps with Web Components
 desc: ''
-updated: 1661807134546
-created: 1661807134546
+updated: 1661812625904
+created: 1661812625904
 tags:
   - fwa
   - serverless
-  - web components
+  - web-components
   - ssr
 location: 'Nanaimo, BC, Canada'
 uri: ''
