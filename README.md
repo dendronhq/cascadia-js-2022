@@ -1,10 +1,4 @@
----
-id: v16mesd1wn40nj2smgcl177
-title: Dendron CascadiaJS 2022 Workspace
-desc: ''
-updated: 1661814917990
-created: 1661789481379
----
+# Dendron CascadiaJS 2022 Workspace
 
 This is the [Dendron](https://www.dendron.so/) workspace for CascadiaJS 2022.
 
