@@ -7,7 +7,7 @@ created: 1661789481379
 ---
 
 ## Guides
-![[guides#^begin]]
+![[guide#^begin]]
 
 ## Schedule
 - https://2022.cascadiajs.com/schedule

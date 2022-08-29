@@ -11,5 +11,5 @@ created: 1661789994907
 ## Tasks
 - [ ] checkin (sunriver resort check-in open at 3pm)
 - [ ] covid check (all attendees and guest 18+)
-	![[guides.01-prep#^p9avkpcjar8q]]
+	![[guide.01-prep#^p9avkpcjar8q]]
 - [ ] welcome reception (8/30)
