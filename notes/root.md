@@ -1,14 +1,10 @@
 ---
 id: v16mesd1wn40nj2smgcl177
-title: CascadiaJS - Dendron Guide
+title: CascadiaJS 2022 Talks
 desc: ''
-updated: 1661790728943
+updated: 1661807176507
 created: 1661789481379
 ---
-
-## Guides
-![[guide#^begin]]
-
 ## Schedule
 - https://2022.cascadiajs.com/schedule
 

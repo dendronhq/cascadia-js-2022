@@ -92,7 +92,8 @@ publishing:
     siteUrl: https://dendronhq.github.io
     assetsPrefix: /cascadia-js-2022
     siteHierarchies:
-        - root
+        - home
+        - talk
     writeStubs: false
     siteRootDir: docs
     seo:

@@ -2,8 +2,8 @@
 id: vladimir-de-turckheim
 title: Join the super secret V8 club and become a JavaScriptbender
 desc: ''
-updated: 1661792882285
-created: 1661792882285
+updated: 1661807134658
+created: 1661807134658
 tags:
   - V8
   - memory leaks

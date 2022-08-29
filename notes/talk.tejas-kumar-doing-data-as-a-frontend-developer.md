@@ -2,8 +2,8 @@
 id: tejas-kumar
 title: Doing Data as a Frontend Developer
 desc: ''
-updated: 1661792882276
-created: 1661792882276
+updated: 1661807134648
+created: 1661807134648
 tags:
   - sqlite
   - postgres

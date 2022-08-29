@@ -2,8 +2,8 @@
 id: eddie-zaneski
 title: Cryptography Isn't Scary
 desc: ''
-updated: 1661792882242
-created: 1661792882242
+updated: 1661807134589
+created: 1661807134589
 tags:
   - cryptography
   - software supply chain

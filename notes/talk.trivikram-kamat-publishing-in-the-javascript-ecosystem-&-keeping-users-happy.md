@@ -2,8 +2,8 @@
 id: trivikram-kamat
 title: Publishing in the JavaScript Ecosystem & Keeping Users Happy
 desc: ''
-updated: 1661792882282
-created: 1661792882282
+updated: 1661807134654
+created: 1661807134654
 tags:
   - node.js
   - npm

@@ -2,8 +2,8 @@
 id: tiger-oakes
 title: How We Automated our Relationship
 desc: ''
-updated: 1661792882279
-created: 1661792882279
+updated: 1661807134651
+created: 1661807134651
 tags:
   - javascript
   - node.js

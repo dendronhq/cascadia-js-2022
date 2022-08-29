@@ -2,8 +2,8 @@
 id: isabela-moreira
 title: The Startup's Guide to Creating a Design System
 desc: ''
-updated: 1661792882249
-created: 1661792882249
+updated: 1661807134603
+created: 1661807134603
 tags:
   - figma
   - react.js

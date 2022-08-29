@@ -2,8 +2,8 @@
 id: rachel-white
 title: The 90s Called and They Want Their Websites Back
 desc: ''
-updated: 1661792882260
-created: 1661792882261
+updated: 1661807134631
+created: 1661807134631
 tags:
   - jamstack
   - react.js

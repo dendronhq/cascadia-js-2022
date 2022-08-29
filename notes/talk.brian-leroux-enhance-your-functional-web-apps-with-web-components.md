@@ -2,8 +2,8 @@
 id: brian-leroux
 title: Enhance your Functional Web Apps with Web Components
 desc: ''
-updated: 1661792882224
-created: 1661792882224
+updated: 1661807134546
+created: 1661807134546
 tags:
   - fwa
   - serverless
