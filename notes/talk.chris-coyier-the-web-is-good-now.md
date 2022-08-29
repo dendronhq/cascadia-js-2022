@@ -31,3 +31,5 @@ pronouns: he/him
 There are quite a few things in the world of web design and development that have gotten… easy. It might be time to take a look at how you’re approaching some of the building blocks of your website because evolutions in browser technology and tooling have made many things easier and better. We’ll have a look at browser-level things like things as fundamental as layout, typography, and animation. Then also tooling level things like media handling, serverless concepts, and hosting.
 
 ## Notes
+
+- polyfills 
