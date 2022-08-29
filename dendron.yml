@@ -112,3 +112,4 @@ publishing:
     enableRandomlyColoredTags: true
     enableTaskNotes: true
     enablePrettyLinks: true
+    customHeaderPath: header.html
