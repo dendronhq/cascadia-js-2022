@@ -89,6 +89,8 @@ publishing:
     enablePrettyRefs: true
     enableKatex: true
     copyAssets: true
+    siteUrl: https://dendronhq.github.io
+    assetsPrefix: /cascadia-js-2022
     siteHierarchies:
         - root
     writeStubs: false

@@ -1,0 +1,24 @@
+{
+  "name": "cascadia-js-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@dendronhq/dendron-cli": "^0.109.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dendronhq/cascadia-js-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dendronhq/cascadia-js-2022/issues"
+  },
+  "homepage": "https://github.com/dendronhq/cascadia-js-2022#readme"
+}
