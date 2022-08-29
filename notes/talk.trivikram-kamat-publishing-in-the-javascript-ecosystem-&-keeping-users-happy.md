@@ -2,8 +2,8 @@
 id: trivikram-kamat
 title: Publishing in the JavaScript Ecosystem & Keeping Users Happy
 desc: ''
-updated: 1661812625966
-created: 1661812625966
+updated: 1661813506512
+created: 1661813506512
 tags:
   - node-js
   - npm
@@ -22,6 +22,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Trivikram Kamat image](https://create-4jr.begin.app/_static/2022/trivikram-kamat.jpg){max-width: 300px}
+- name: Trivikram Kamat
 - [Speaker Page](https://2022.cascadiajs.com/speakers/trivikram-kamat)
 
 ## Abstract

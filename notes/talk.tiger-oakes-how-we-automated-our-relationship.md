@@ -2,8 +2,8 @@
 id: tiger-oakes
 title: How We Automated our Relationship
 desc: ''
-updated: 1661812625963
-created: 1661812625963
+updated: 1661813506509
+created: 1661813506509
 tags:
   - javascript
   - node-js
@@ -22,6 +22,7 @@ pronouns: he/him
 ## Overview
 
 ![Tiger Oakes image](https://create-4jr.begin.app/_static/2022/tiger-oakes.jpg){max-width: 300px}
+- name: Tiger Oakes
 - [Speaker Page](https://2022.cascadiajs.com/speakers/tiger-oakes)
 
 ## Abstract

@@ -2,8 +2,8 @@
 id: rebecca-peltz
 title: Learning and Managing Code with Code Notebooks
 desc: ''
-updated: 1661812625953
-created: 1661812625953
+updated: 1661813506490
+created: 1661813506490
 tags:
   - microservices
   - low-code
@@ -22,6 +22,7 @@ pronouns: she/her/hers
 ## Overview
 
 ![Rebecca Peltz image](https://create-4jr.begin.app/_static/2022/rebecca-peltz.jpg){max-width: 300px}
+- name: Rebecca Peltz
 - [Speaker Page](https://2022.cascadiajs.com/speakers/rebecca-peltz)
 
 ## Abstract

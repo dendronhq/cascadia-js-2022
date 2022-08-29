@@ -2,8 +2,8 @@
 id: ian-sutherland
 title: Zero-dependency CLIs with Node.js
 desc: ''
-updated: 1661812625934
-created: 1661812625934
+updated: 1661813506462
+created: 1661813506462
 tags:
   - node-js
   - cli
@@ -19,6 +19,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Ian Sutherland image](https://create-4jr.begin.app/_static/2022/ian-sutherland.jpg){max-width: 300px}
+- name: Ian Sutherland
 - [Speaker Page](https://2022.cascadiajs.com/speakers/ian-sutherland)
 
 ## Abstract

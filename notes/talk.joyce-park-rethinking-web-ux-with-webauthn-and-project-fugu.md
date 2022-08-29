@@ -2,8 +2,8 @@
 id: joyce-park
 title: Rethinking Web UX with Webauthn and Project Fugu
 desc: ''
-updated: 1661812625943
-created: 1661812625943
+updated: 1661813506478
+created: 1661813506478
 tags:
   - auth
   - webauthn
@@ -20,6 +20,7 @@ pronouns: she/her
 ## Overview
 
 ![Joyce Park image](https://create-4jr.begin.app/_static/2022/joyce-park.jpg){max-width: 300px}
+- name: Joyce Park
 - [Speaker Page](https://2022.cascadiajs.com/speakers/joyce-park)
 
 ## Abstract

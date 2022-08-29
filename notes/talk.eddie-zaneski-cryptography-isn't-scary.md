@@ -2,8 +2,8 @@
 id: eddie-zaneski
 title: Cryptography Isn't Scary
 desc: ''
-updated: 1661812625930
-created: 1661812625930
+updated: 1661813506458
+created: 1661813506458
 tags:
   - cryptography
   - software-supply-chain
@@ -19,6 +19,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Eddie Zaneski image](https://create-4jr.begin.app/_static/2022/eddie-zaneski.jpg){max-width: 300px}
+- name: Eddie Zaneski
 - [Speaker Page](https://2022.cascadiajs.com/speakers/eddie-zaneski)
 
 ## Abstract

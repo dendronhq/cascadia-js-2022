@@ -2,8 +2,8 @@
 id: mikeal-rogers
 title: Bringing Web3 to the Web
 desc: ''
-updated: 1661812625946
-created: 1661812625946
+updated: 1661813506481
+created: 1661813506481
 tags:
   - web3
   - ipfs
@@ -18,6 +18,7 @@ pronouns: he/him
 ## Overview
 
 ![Mikeal Rogers image](https://create-4jr.begin.app/_static/2022/mikeal-rogers.jpg){max-width: 300px}
+- name: Mikeal Rogers
 - [Speaker Page](https://2022.cascadiajs.com/speakers/mikeal-rogers)
 
 ## Abstract

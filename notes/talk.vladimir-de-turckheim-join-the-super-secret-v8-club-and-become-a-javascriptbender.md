@@ -2,8 +2,8 @@
 id: vladimir-de-turckheim
 title: Join the super secret V8 club and become a JavaScriptbender
 desc: ''
-updated: 1661812625968
-created: 1661812625968
+updated: 1661813506516
+created: 1661813506516
 tags:
   - v8
   - memory-leaks
@@ -23,6 +23,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Vladimir de Turckheim image](https://create-4jr.begin.app/_static/2022/vladimir-de-turckheim.jpg){max-width: 300px}
+- name: Vladimir de Turckheim
 - [Speaker Page](https://2022.cascadiajs.com/speakers/vladimir-de-turckheim)
 
 ## Abstract

@@ -2,8 +2,8 @@
 id: saimon-sharif
 title: A Few Good Design Patterns
 desc: ''
-updated: 1661812625956
-created: 1661812625956
+updated: 1661813506496
+created: 1661813506496
 tags:
   - cognitive-biases
   - engineering-career-growth
@@ -19,6 +19,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Saimon Sharif image](https://create-4jr.begin.app/_static/2022/saimon-sharif.jpg){max-width: 300px}
+- name: Saimon Sharif
 - [Speaker Page](https://2022.cascadiajs.com/speakers/saimon-sharif)
 
 ## Abstract

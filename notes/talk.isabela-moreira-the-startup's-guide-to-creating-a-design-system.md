@@ -2,8 +2,8 @@
 id: isabela-moreira
 title: The Startup's Guide to Creating a Design System
 desc: ''
-updated: 1661812625937
-created: 1661812625937
+updated: 1661813506468
+created: 1661813506468
 tags:
   - figma
   - react-js
@@ -21,6 +21,7 @@ pronouns: she/her
 ## Overview
 
 ![Isabela Moreira image](https://create-4jr.begin.app/_static/2022/isabela-moreira.jpg){max-width: 300px}
+- name: Isabela Moreira
 - [Speaker Page](https://2022.cascadiajs.com/speakers/isabela-moreira)
 
 ## Abstract

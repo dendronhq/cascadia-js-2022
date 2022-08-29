@@ -2,8 +2,8 @@
 id: joyce-lin
 title: Reverse Engineering a Private API
 desc: ''
-updated: 1661812625940
-created: 1661812625940
+updated: 1661813506474
+created: 1661813506474
 tags:
   - api
   - web
@@ -19,6 +19,7 @@ pronouns: she/her
 ## Overview
 
 ![Joyce Lin image](https://create-4jr.begin.app/_static/2022/joyce-lin.jpg){max-width: 300px}
+- name: Joyce Lin
 - [Speaker Page](https://2022.cascadiajs.com/speakers/joyce-lin)
 
 ## Abstract

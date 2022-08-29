@@ -2,8 +2,8 @@
 id: tejas-kumar
 title: Doing Data as a Frontend Developer
 desc: ''
-updated: 1661812625960
-created: 1661812625960
+updated: 1661813506505
+created: 1661813506505
 tags:
   - sqlite
   - postgres
@@ -21,6 +21,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Tejas Kumar image](https://create-4jr.begin.app/_static/2022/tejas-kumar.jpg){max-width: 300px}
+- name: Tejas Kumar
 - [Speaker Page](https://2022.cascadiajs.com/speakers/tejas-kumar)
 
 ## Abstract

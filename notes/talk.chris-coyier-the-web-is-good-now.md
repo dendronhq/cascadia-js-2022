@@ -2,8 +2,8 @@
 id: chris-coyier
 title: The Web is Good Now
 desc: ''
-updated: 1661812625916
-created: 1661812625916
+updated: 1661813506443
+created: 1661813506443
 tags:
   - typography
   - images
@@ -23,6 +23,7 @@ pronouns: he/him
 ## Overview
 
 ![Chris Coyier image](https://create-4jr.begin.app/_static/2022/chris-coyier.jpg){max-width: 300px}
+- name: Chris Coyier
 - [Speaker Page](https://2022.cascadiajs.com/speakers/chris-coyier)
 
 ## Abstract

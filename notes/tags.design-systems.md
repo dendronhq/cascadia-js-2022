@@ -2,6 +2,6 @@
 id: design-systems
 title: design systems
 desc: ''
-updated: 1661812626004
-created: 1661812626004
+updated: 1661813506555
+created: 1661813506555
 ---

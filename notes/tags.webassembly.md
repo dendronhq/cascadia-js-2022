@@ -2,6 +2,6 @@
 id: webassembly
 title: webassembly
 desc: ''
-updated: 1661812626008
-created: 1661812626008
+updated: 1661813506560
+created: 1661813506560
 ---

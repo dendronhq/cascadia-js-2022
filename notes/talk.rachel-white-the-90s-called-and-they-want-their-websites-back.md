@@ -2,8 +2,8 @@
 id: rachel-white
 title: The 90s Called and They Want Their Websites Back
 desc: ''
-updated: 1661812625948
-created: 1661812625948
+updated: 1661813506485
+created: 1661813506485
 tags:
   - jamstack
   - react-js
@@ -20,6 +20,7 @@ pronouns: she/her/hers
 ## Overview
 
 ![Rachel White image](https://create-4jr.begin.app/_static/2022/rachel-white.jpg){max-width: 300px}
+- name: Rachel White
 - [Speaker Page](https://2022.cascadiajs.com/speakers/rachel-white)
 
 ## Abstract

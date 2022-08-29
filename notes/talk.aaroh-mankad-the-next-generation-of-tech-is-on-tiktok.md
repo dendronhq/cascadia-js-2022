@@ -2,8 +2,8 @@
 id: aaroh-mankad
 title: The Next Generation of Tech is on Tiktok
 desc: ''
-updated: 1661812625899
-created: 1661812625899
+updated: 1661813506410
+created: 1661813506410
 tags:
   - community
   - inclusiveness
@@ -19,6 +19,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Aaroh Mankad image](https://create-4jr.begin.app/_static/2022/aaroh-mankad.jpg){max-width: 300px}
+- name: Aaroh Mankad
 - [Speaker Page](https://2022.cascadiajs.com/speakers/aaroh-mankad)
 
 ## Abstract

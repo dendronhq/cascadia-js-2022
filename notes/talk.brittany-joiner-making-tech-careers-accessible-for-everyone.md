@@ -2,8 +2,8 @@
 id: brittany-joiner
 title: Making tech careers accessible for everyone
 desc: ''
-updated: 1661812625908
-created: 1661812625908
+updated: 1661813506433
+created: 1661813506433
 tags:
   - inclusivity
   - hiring
@@ -18,6 +18,7 @@ pronouns: she/her
 ## Overview
 
 ![Brittany Joiner image](https://create-4jr.begin.app/_static/2022/brittany-joiner.jpg){max-width: 300px}
+- name: Brittany Joiner
 - [Speaker Page](https://2022.cascadiajs.com/speakers/brittany-joiner)
 
 ## Abstract

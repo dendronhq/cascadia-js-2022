@@ -2,8 +2,8 @@
 id: daphne-liu
 title: How We Automated our Relationship
 desc: ''
-updated: 1661812625921
-created: 1661812625921
+updated: 1661813506449
+created: 1661813506449
 tags:
   - javascript
   - node-js
@@ -22,6 +22,7 @@ pronouns: she/her
 ## Overview
 
 ![Daphne Liu image](https://create-4jr.begin.app/_static/2022/daphne-liu.jpg){max-width: 300px}
+- name: Daphne Liu
 - [Speaker Page](https://2022.cascadiajs.com/speakers/daphne-liu)
 
 ## Abstract

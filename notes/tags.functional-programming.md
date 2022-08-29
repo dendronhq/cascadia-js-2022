@@ -2,6 +2,6 @@
 id: functional-programming
 title: functional programming
 desc: ''
-updated: 1661812625987
-created: 1661812625987
+updated: 1661813506541
+created: 1661813506541
 ---

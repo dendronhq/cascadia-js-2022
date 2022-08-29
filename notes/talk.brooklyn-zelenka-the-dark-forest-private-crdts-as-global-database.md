@@ -2,8 +2,8 @@
 id: brooklyn-zelenka
 title: 'The Dark Forest: Private CRDTs as Global Database'
 desc: ''
-updated: 1661812625913
-created: 1661812625913
+updated: 1661813506438
+created: 1661813506438
 tags:
   - web3
   - distributed-systems
@@ -24,6 +24,7 @@ pronouns: she/her/hers
 ## Overview
 
 ![Brooklyn Zelenka image](https://create-4jr.begin.app/_static/2022/brooklyn-zelenka.jpg){max-width: 300px}
+- name: Brooklyn Zelenka
 - [Speaker Page](https://2022.cascadiajs.com/speakers/brooklyn-zelenka)
 
 ## Abstract

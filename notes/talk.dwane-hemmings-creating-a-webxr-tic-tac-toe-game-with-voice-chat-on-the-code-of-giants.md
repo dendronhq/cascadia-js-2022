@@ -2,8 +2,8 @@
 id: dwane-hemmings
 title: Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants
 desc: ''
-updated: 1661812625924
-created: 1661812625924
+updated: 1661813506453
+created: 1661813506453
 tags:
   - web-components
   - webxr
@@ -21,6 +21,7 @@ pronouns: he/him/his
 ## Overview
 
 ![Dwane Hemmings image](https://create-4jr.begin.app/_static/2022/dwane-hemmings.jpg){max-width: 300px}
+- name: Dwane Hemmings
 - [Speaker Page](https://2022.cascadiajs.com/speakers/dwane-hemmings)
 
 ## Abstract

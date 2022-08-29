@@ -2,8 +2,8 @@
 id: brian-leroux
 title: Enhance your Functional Web Apps with Web Components
 desc: ''
-updated: 1661812625904
-created: 1661812625904
+updated: 1661813506426
+created: 1661813506426
 tags:
   - fwa
   - serverless
@@ -20,6 +20,7 @@ pronouns: they/them
 ## Overview
 
 ![Brian Leroux image](https://create-4jr.begin.app/_static/2022/brian-leroux.jpg){max-width: 300px}
+- name: Brian Leroux
 - [Speaker Page](https://2022.cascadiajs.com/speakers/brian-leroux)
 
 ## Abstract
