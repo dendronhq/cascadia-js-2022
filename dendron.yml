@@ -104,7 +104,7 @@ publishing:
         editLinkText: Edit this page on GitHub
         editBranch: main
         editViewMode: tree
-        editRepository: https://github.com/dendronhq/dendron-site
+        editRepository: https://github.com/dendronhq/cascadia-js-2022
     enableSiteLastModified: true
     enableFrontmatterTags: true
     enableHashesForFMTags: false
