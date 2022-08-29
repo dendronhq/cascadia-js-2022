@@ -1,13 +1,11 @@
 ---
 id: qwdt0khxbevqlbrp67nay4w
-title: Talk
+title: Talks
 desc: ''
-updated: 1661792960529
+updated: 1661810788178
 created: 1661792922568
 ---
 
-Overview for all the speakers
-
-## Speakers
+All speakers and talks
 
 ![[talk.*]]

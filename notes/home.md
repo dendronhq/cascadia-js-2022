@@ -2,7 +2,7 @@
 id: 7ifn0jqm45dvq2e5wc6xjo2
 title: CascadiaJS 2022 Notes
 desc: ''
-updated: 1661810282468
+updated: 1661811072873
 created: 1661807247613
 ---
 
@@ -12,8 +12,6 @@ This site was created using [Dendron](https://www.dendron.so/), the open source 
 
 Dendron is participating in the CascadiaJS [Startup Fair](https://2022.cascadiajs.com/conference/startup-fair#dendron) - please drop by to say hi and pick up stickers and goodies!
 
+## Notable Talks
 
-## Schedule
-- https://2022.cascadiajs.com/schedule
-
-## Talks
+As you attend talks at CascadiaJS this year, considering adding your notes to this knowledge base via a pull request. Not only will this help others, every accepted pull request will also be entered into a [[raffle|home.raffle]] for an **iPad Air** or a **remarkable2 tablet**!
