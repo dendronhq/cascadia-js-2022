@@ -112,3 +112,5 @@ publishing:
     enableRandomlyColoredTags: true
     enableTaskNotes: true
     enablePrettyLinks: true
+    ga: 
+        tracking: "G-VFTZJ909T3"
