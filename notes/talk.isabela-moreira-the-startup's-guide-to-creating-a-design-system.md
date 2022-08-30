@@ -2,8 +2,8 @@
 id: isabela-moreira
 title: The Startup's Guide to Creating a Design System
 desc: ''
-updated: 1661813506468
-created: 1661813506468
+updated: 1661818631409
+created: 1661818631409
 tags:
   - figma
   - react-js
@@ -16,6 +16,25 @@ twitter: isabelacmor
 company: Microsoft
 pronouns: she/her
 ---
+
+<script src="https://giscus.app/client.js"
+	data-repo="dendronhq/cascadia-js-2022"
+	data-repo-id="R_kgDOH5vYkQ"
+	data-category="Announcements"
+	data-category-id="DIC_kwDOH5vYkc4CRHwm"
+	data-mapping="pathname"
+	data-strict="0"
+	data-reactions-enabled="1"
+	data-emit-metadata="0"
+	data-input-position="top"
+	data-theme="preferred_color_scheme"
+	data-lang="en"
+	data-loading="lazy"
+	crossorigin="anonymous"
+	async>
+</script>
+	
+
 > The contents here is created from the official [CascadiaJS Page](https://2022.cascadiajs.com/speakers/isabela-moreira)
 
 ## Overview

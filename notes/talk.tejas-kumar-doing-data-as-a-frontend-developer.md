@@ -2,8 +2,8 @@
 id: tejas-kumar
 title: Doing Data as a Frontend Developer
 desc: ''
-updated: 1661813506505
-created: 1661813506505
+updated: 1661818631433
+created: 1661818631433
 tags:
   - sqlite
   - postgres
@@ -16,6 +16,25 @@ twitter: tejaskumar_
 company: Xata
 pronouns: he/him/his
 ---
+
+<script src="https://giscus.app/client.js"
+	data-repo="dendronhq/cascadia-js-2022"
+	data-repo-id="R_kgDOH5vYkQ"
+	data-category="Announcements"
+	data-category-id="DIC_kwDOH5vYkc4CRHwm"
+	data-mapping="pathname"
+	data-strict="0"
+	data-reactions-enabled="1"
+	data-emit-metadata="0"
+	data-input-position="top"
+	data-theme="preferred_color_scheme"
+	data-lang="en"
+	data-loading="lazy"
+	crossorigin="anonymous"
+	async>
+</script>
+	
+
 > The contents here is created from the official [CascadiaJS Page](https://2022.cascadiajs.com/speakers/tejas-kumar)
 
 ## Overview
