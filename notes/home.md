@@ -2,11 +2,11 @@
 id: 7ifn0jqm45dvq2e5wc6xjo2
 title: CascadiaJS 2022 Notes
 desc: ''
-updated: 1661825545384
+updated: 1661826108774
 created: 1661807247613
 ---
 
-Welcome traveler! You've arrived at the [Dendron](https://www.dendron.so/) workspace for [CascadiaJS 2022](https://2022.cascadiajs.com/)! Dendorn is the open source knowledge base for developers. All pages here are published from plaintext markdown and manged using git and github.
+Welcome traveler! You've arrived at the [Dendron](https://www.dendron.so/) workspace for [CascadiaJS 2022](https://2022.cascadiajs.com/)! Dendron is the open source knowledge base for developers. All pages here are published from plaintext markdown and manged using git and github.
 
 You can fork the [github repo](https://github.com/dendronhq/cascadia-js-2022) to get offline access to all the talks of CascadiaJS 2022. 
 If you open this workspace using [VSCode](https://code.visualstudio.com/), you can use Dendron to navigate these notes as well as to add your own. 
