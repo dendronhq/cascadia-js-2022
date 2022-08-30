@@ -2,7 +2,7 @@
 id: x84sn91kbhdc7wwc58m3ho0
 title: Contributing
 desc: ''
-updated: 1661817178046
+updated: 1661817895828
 created: 1661811133582
 homepage: https://dendronhq.github.io/cascadia-js-2022/
 ---
@@ -18,16 +18,6 @@ The easiest way to add notes is to click on the `Edit this page on GitHub` link 
 ### Published Site
 You can view notes by visiting the [published site]({{fm.homepage}}). 
 
-### Codespaces
-You can browse notes using the Dendron VSCode WebExtension.
-
-#todo
-
-1. Go to https://github.com/dendronhq/cascadia-js-2022
-1. Hit `.`
-1. Install dendron (you only need to do this once)
-1. Start using 
-
 ### VSCode
 
 You can use VSCode to clone and browse the notes locally. 
@@ -38,4 +28,13 @@ You can use VSCode to clone and browse the notes locally.
 	```
 1. Open with VSCode
 1. Install recommended extensions (if you miss the information toast, you can install Dendron [directly](https://marketplace.visualstudio.com/items?itemName=dendron.dendron))
-1. (Optional): Go through the Dendron 5min Tutorial (you will be prompted to go through this the first time you install Dendron)
+1. (Optional): Go through the Dendron 5min Tutorial (you will be prompted to go through this the first time you install Dendron). In case you miss the prompt, you can also find the tutorial on the [Dendron wiki](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1)
+### Codespaces
+You can browse notes using the Dendron VSCode WebExtension. This lets you experiment with a subset of Dendron's functionality without any setup.
+
+1. Go to https://github.com/dendronhq/cascadia-js-2022
+1. Hit `.`
+1. Install dendron in the extensions panel
+1. Start using `cmd+l` or `ctrl+l` to navigate the workspace.
+
+<div style="position: relative; padding-bottom: 64.5933014354067%; height: 0;"><iframe src="https://www.loom.com/embed/2aee86c0d2024b2bac0b18f6da5c813d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
