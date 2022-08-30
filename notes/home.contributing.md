@@ -29,8 +29,9 @@ You can use VSCode to clone and browse the notes locally.
 1. Open with VSCode
 1. Install recommended extensions (if you miss the information toast, you can install Dendron [directly](https://marketplace.visualstudio.com/items?itemName=dendron.dendron))
 1. (Optional): Go through the Dendron 5min Tutorial (you will be prompted to go through this the first time you install Dendron). In case you miss the prompt, you can also find the tutorial on the [Dendron wiki](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1)
+
 ### Codespaces
-You can browse notes using the Dendron VSCode WebExtension. This lets you experiment with a subset of Dendron's functionality without any setup.
+You can view and edit notes from your browser with the Dendron VSCode Web Extension. This lets you experiment with a subset of Dendron's functionality without needing to download VS Code.
 
 1. Go to https://github.com/dendronhq/cascadia-js-2022
 1. Hit `.`
