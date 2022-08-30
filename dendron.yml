@@ -98,8 +98,8 @@ publishing:
     writeStubs: false
     siteRootDir: docs
     seo:
-        title: Dendron
-        description: Personal Knowledge Space
+        title: CascadiaJS 2022 Conference
+        description: Notes about the cascadiajs 2022 conference
     github:
         enableEditLink: true
         editLinkText: Edit this page on GitHub
