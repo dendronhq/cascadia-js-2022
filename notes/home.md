@@ -2,7 +2,7 @@
 id: 7ifn0jqm45dvq2e5wc6xjo2
 title: CascadiaJS 2022 Notes
 desc: ''
-updated: 1661822537446
+updated: 1661823827586
 created: 1661807247613
 ---
 
@@ -17,7 +17,7 @@ If you open this workspace using [VSCode](https://code.visualstudio.com/), you c
 
 ### By Browsing
 
-<div style="position: relative; padding-bottom: 64.5933014354067%; height: 0;"><iframe src="https://www.loom.com/embed/14e4312fcc7a4c759eeee24dd99919ad" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 64.5933014354067%; height: 0;"><iframe src="https://www.loom.com/embed/b9b0e77e4c204550852fd372d3d9e0af" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ### By Lookup
 
