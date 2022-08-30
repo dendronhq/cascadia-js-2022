@@ -112,5 +112,6 @@ publishing:
     enableRandomlyColoredTags: true
     enableTaskNotes: true
     enablePrettyLinks: true
+    logoPath: logo.png
     ga: 
         tracking: "G-VFTZJ909T3"
