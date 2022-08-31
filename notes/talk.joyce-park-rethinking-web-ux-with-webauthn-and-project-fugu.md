@@ -2,7 +2,7 @@
 id: joyce-park
 title: Rethinking Web UX with Webauthn and Project Fugu
 desc: ''
-updated: 1661970169881
+updated: 1661970988375
 created: 1661898027725
 tags:
   - auth
@@ -30,59 +30,5 @@ Devs still may not realize that browsers are now on the cusp of enabling far mor
 
 ## Notes
 
-### Notes by [kevin](https://github.com/kevinslin)
-- two types of builders: plumbers (make tools and infrastructure) and carpenters (make user-facing apps)
-- building an app to help people connect faster IRL (can't demo yet)
-- "there are a lot of things the web can do now that can revolutionize our UX"
-- Project Fugu
-    - Google-led attempt to match native UX on web
-    - https://developer.chrome.com/blog/fugu-showcase/
-- Demos
-- https://graphauth.io/registerWebauthn
-- https://twitter.com/devdevcharlie/status/1564281622970568704?s=20&t=T9K7v0bXk4MDa4aTViEfFA
-- ML driven UX
-    - https://teachablemachine.withgoogle.com/
-- caveats
-    - Safari
-    - performance can be an issue
-    - PWAs are misunderstood by the masses (user education)
-- takeaway: understand new things browsers can do for us, make things cooler
-
-### Notes by [aminamos](https://github.com/aminamos)
-  > all slides were left behind, ahd to re-create slides
-
-- speaker bio
-  - plumbers: toosl and infrastructure
-  - carpenters: user facing apps
-  - speaker is a carpenter
-  - currently building an app to help people connect faster IRL 
-
-- context
-  - for past few years, been possible to stroe lots of info on web apps
-  - this is paradigm changing, like XHR
-
-- ux is boring now
-- toolkits are good
-- app downloads and usage are down
-
-- what is fugue
-  - google led attempt to match native ux
-  - apple has not played along, not much progress
-
-- webauthn (this is fido2)
-  - replace passwords with biometrics
-
-- demo
-  - web usb
-  - file system access api
-
-- ml driven ux
-  - image classification eg
-    - banana demo
-  - voice recognition
-
-- caveats
-  - safari
-  - perf
-  - pwas are misunderstood
+![[talk.joyce-park-rethinking-web-ux-with-webauthn-and-project-fugu.*]]
 
