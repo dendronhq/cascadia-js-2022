@@ -2,7 +2,7 @@
 id: joyce-park
 title: Rethinking Web UX with Webauthn and Project Fugu
 desc: ''
-updated: 1661970988375
+updated: 1661972087259
 created: 1661898027725
 tags:
   - auth
@@ -27,6 +27,9 @@ enableGiscus: true
 ## Abstract
 
 Devs still may not realize that browsers are now on the cusp of enabling far more advanced capabilities via efforts like Webauthn and Project Fugu. This will allow developers to more effectively mix the business case for no-download PWAs and web with the native capabilities of current hardware. We’ll go through demos and sample code for some fun new types of web interactions, including biometric authentication, voice recognition, Bluetooth device integration, and ML-recognized gestures.
+
+## Links
+- [Twitter link to counting app](https://twitter.com/ValaAfshar/status/1562468468683079680)
 
 ## Notes
 

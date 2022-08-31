@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1661971168696
+updated: 1661971766103
 created: 1661792922568
 ---
 
@@ -14,6 +14,7 @@ All speakers and talks
 
 - [[Rethinking Web UX with Webauthn and Project Fugu|talk.joyce-park-rethinking-web-ux-with-webauthn-and-project-fugu]]
 - [[Doing Data as a Frontend Developer|talk.tejas-kumar-doing-data-as-a-frontend-developer]]
+- [[The 90s Called and They Want Their Websites Back|talk.rachel-white-the-90s-called-and-they-want-their-websites-back]]
 
 ## Talks
 ![[talk.*]]
