@@ -2,7 +2,7 @@
 id: tejas-kumar
 title: Doing Data as a Frontend Developer
 desc: ''
-updated: 1661898027747
+updated: 1661971081154
 created: 1661898027747
 tags:
   - sqlite
@@ -30,3 +30,5 @@ enableGiscus: true
 Web devs are often confused about data. What database do we choose? What are the tradeoffs between NoSQL and MySQL? This talk answers these questions and gives web developers DBA-level skills to help them build with data reliably.
 
 ## Notes
+
+![[talk.tejas-kumar-doing-data-as-a-frontend-developer.*]]
