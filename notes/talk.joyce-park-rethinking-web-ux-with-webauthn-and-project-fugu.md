@@ -2,7 +2,7 @@
 id: joyce-park
 title: Rethinking Web UX with Webauthn and Project Fugu
 desc: ''
-updated: 1661898027725
+updated: 1661970169881
 created: 1661898027725
 tags:
   - auth
@@ -29,3 +29,40 @@ enableGiscus: true
 Devs still may not realize that browsers are now on the cusp of enabling far more advanced capabilities via efforts like Webauthn and Project Fugu. This will allow developers to more effectively mix the business case for no-download PWAs and web with the native capabilities of current hardware. We’ll go through demos and sample code for some fun new types of web interactions, including biometric authentication, voice recognition, Bluetooth device integration, and ML-recognized gestures.
 
 ## Notes
+
+  > all slides were left behind, ahd to re-create slides
+
+- speaker bio
+  - plumbers: toosl and infrastructure
+  - carpenters: user facing apps
+  - speaker is a carpenter
+  - currently building an app to help people connect faster IRL 
+
+- context
+  - for past few years, been possible to stroe lots of info on web apps
+  - this is paradigm changing, like XHR
+
+- ux is boring now
+- toolkits are good
+- app downloads and usage are down
+
+- what is fugue
+  - google led attempt to match native ux
+  - apple has not played along, not much progress
+
+- webauthn (this is fido2)
+  - replace passwords with biometrics
+
+- demo
+  - web usb
+  - file system access api
+
+- ml driven ux
+  - image classification eg
+    - banana demo
+  - voice recognition
+
+- caveats
+  - safari
+  - perf
+  - pwas are misunderstood
