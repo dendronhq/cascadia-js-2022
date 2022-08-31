@@ -2,8 +2,8 @@
 id: trivikram-kamat
 title: Publishing in the JavaScript Ecosystem & Keeping Users Happy
 desc: ''
-updated: 1661819714230
-created: 1661819714230
+updated: 1661898027754
+created: 1661898027754
 tags:
   - node-js
   - npm
@@ -16,6 +16,7 @@ uri: ''
 twitter: trivikram
 company: Amazon
 pronouns: he/him/his
+enableGiscus: true
 ---
 > The contents here is created from the official [CascadiaJS Page](https://2022.cascadiajs.com/speakers/trivikram-kamat)
 
@@ -30,24 +31,3 @@ pronouns: he/him/his
 This talk will cover how your JavaScript package can support various runtimes and module formats, while keeping bundle/publish/install sizes in check and providing types/sources/source-maps.
 
 ## Notes
-
-
-<!-- KEEP this at the bottom to enable discussions for this page -->
-
-<script src="https://giscus.app/client.js"
-	data-repo="dendronhq/cascadia-js-2022"
-	data-repo-id="R_kgDOH5vYkQ"
-	data-category="Announcements"
-	data-category-id="DIC_kwDOH5vYkc4CRHwm"
-	data-mapping="pathname"
-	data-strict="0"
-	data-reactions-enabled="1"
-	data-emit-metadata="0"
-	data-input-position="top"
-	data-theme="preferred_color_scheme"
-	data-lang="en"
-	data-loading="lazy"
-	crossorigin="anonymous"
-	async>
-</script>
-	

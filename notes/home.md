@@ -2,7 +2,7 @@
 id: 7ifn0jqm45dvq2e5wc6xjo2
 title: CascadiaJS 2022 Notes
 desc: ''
-updated: 1661826108774
+updated: 1661901679613
 created: 1661807247613
 ---
 
@@ -12,6 +12,7 @@ You can fork the [github repo](https://github.com/dendronhq/cascadia-js-2022) to
 If you open this workspace using [VSCode](https://code.visualstudio.com/), you can use Dendron to navigate these notes as well as to add your own. 
 
 ![Dendron Workspace](https://ik.imagekit.io/fpjzhqpv1/Fullscreen_8_29_22__6_01_PM_-rO3FY3p9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661821303348)
+
 
 ## Find speakers and talks
 

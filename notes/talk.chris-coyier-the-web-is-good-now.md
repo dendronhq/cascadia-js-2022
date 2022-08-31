@@ -4,6 +4,8 @@ title: The Web is Good Now
 desc: ''
 updated: 1661965060773
 created: 1661819714159
+updated: 1661898027696
+created: 1661898027696
 tags:
   - typography
   - images
@@ -17,6 +19,7 @@ uri: ''
 twitter: chriscoyier
 company: CodePen
 pronouns: he/him
+enableGiscus: true
 ---
 > The contents here is created from the official [CascadiaJS Page](https://2022.cascadiajs.com/speakers/chris-coyier)
 
@@ -101,4 +104,4 @@ Runs the shop talk podcast?
 	crossorigin="anonymous"
 	async>
 </script>
-	
+

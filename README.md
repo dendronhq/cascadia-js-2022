@@ -4,6 +4,8 @@ This is the [Dendron](https://www.dendron.so/) workspace for CascadiaJS 2022.
 
 You can clone this repository to have access to speaker notes.
 
+Alternative, you can press `.` while on this repository to browse this repo using codespaces (you'll need to install the Dendron extension from codespaces)
+
 ## Getting Started
 
 1. Clone the repo
