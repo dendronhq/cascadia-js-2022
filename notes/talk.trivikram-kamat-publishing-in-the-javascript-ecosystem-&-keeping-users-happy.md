@@ -2,7 +2,7 @@
 id: trivikram-kamat
 title: Publishing in the JavaScript Ecosystem & Keeping Users Happy
 desc: ''
-updated: 1661898027754
+updated: 1661981142566
 created: 1661898027754
 tags:
   - node-js
@@ -31,3 +31,5 @@ enableGiscus: true
 This talk will cover how your JavaScript package can support various runtimes and module formats, while keeping bundle/publish/install sizes in check and providing types/sources/source-maps.
 
 ## Notes
+
+![[talk.trivikram-kamat-publishing-in-the-javascript-ecosystem-&-keeping-users-happy.*]]
