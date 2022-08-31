@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1661979846999
+updated: 1661982452651
 created: 1661792922568
 ---
 
@@ -17,6 +17,7 @@ All speakers and talks
 - [[The 90s Called and They Want Their Websites Back|talk.rachel-white-the-90s-called-and-they-want-their-websites-back]]
 
 - [[Publishing in the JavaScript Ecosystem & Keeping Users Happy|talk.trivikram-kamat-publishing-in-the-javascript-ecosystem-&-keeping-users-happy]]
+- [[Cryptography Isn't Scary|talk.eddie-zaneski-cryptography-isn't-scary]]
 
 ## Talks
 ![[talk.*]]

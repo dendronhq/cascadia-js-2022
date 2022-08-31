@@ -2,7 +2,7 @@
 id: eddie-zaneski
 title: Cryptography Isn't Scary
 desc: ''
-updated: 1661898027709
+updated: 1661982729179
 created: 1661898027709
 tags:
   - cryptography
@@ -28,3 +28,5 @@ enableGiscus: true
 Cryptography isn't scary, it's fun! Join for a crash course in modern cryptography. Learn what's available in Node and the browser along with how we are securing the software supply chain.
 
 ## Notes
+
+![[talk.eddie-zaneski-cryptography-isn't-scary.*]]
