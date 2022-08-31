@@ -2,15 +2,8 @@
 id: chris-coyier
 title: The Web is Good Now
 desc: ''
-<<<<<<< HEAD
-updated: 1661965418097
+updated: 1661965468692
 created: 1661819714159
-=======
-updated: 1661965060773
-created: 1661819714159
-updated: 1661898027696
-created: 1661898027696
->>>>>>> 2cc8196a70fb5376fe9100f47ef51bc042d028ec
 tags:
   - typography
   - images
