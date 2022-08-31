@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1661982452651
+updated: 1661982763430
 created: 1661792922568
 ---
 
@@ -18,6 +18,7 @@ All speakers and talks
 
 - [[Publishing in the JavaScript Ecosystem & Keeping Users Happy|talk.trivikram-kamat-publishing-in-the-javascript-ecosystem-&-keeping-users-happy]]
 - [[Cryptography Isn't Scary|talk.eddie-zaneski-cryptography-isn't-scary]]
+- [[Reverse Engineering a Private API|talk.joyce-lin-reverse-engineering-a-private-api]]
 
 ## Talks
 ![[talk.*]]

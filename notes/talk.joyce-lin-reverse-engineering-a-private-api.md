@@ -2,7 +2,7 @@
 id: joyce-lin
 title: Reverse Engineering a Private API
 desc: ''
-updated: 1661898027720
+updated: 1661984535384
 created: 1661898027720
 tags:
   - api
@@ -28,3 +28,5 @@ enableGiscus: true
 Learn how to inspect APIs for when you're working with poorly documented ones, debugging, web scraping, or penetration testing.
 
 ## Notes
+
+![[talk.joyce-lin-reverse-engineering-a-private-api.kevinslin.*]]
