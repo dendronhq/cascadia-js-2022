@@ -90,6 +90,7 @@ publishing:
     enableKatex: true
     copyAssets: true
     siteUrl: "https://cascadiajs.dendron.so"
+    siteIndex: home
     #assetsPrefix: /cascadia-js-2022
     siteHierarchies:
         - home
