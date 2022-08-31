@@ -33,14 +33,13 @@ There are quite a few things in the world of web design and development that hav
 
 ## Notes
 
-### Chris Coyier
-
-Has published 5k blog posts.
-
-Runs the shop talk podcast?
 
 ### Hunter's notes
 
+
+- Chris Coyier
+  - Has published 5k blog posts.
+  - Runs the shop talk podcast?
 - Ate every breakfast burrito in Bend.
 - took pictures, entered data...
 - Used Astro to build his website.
