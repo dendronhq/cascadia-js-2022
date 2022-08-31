@@ -112,6 +112,20 @@ publishing:
     enableRandomlyColoredTags: true
     enableTaskNotes: true
     enablePrettyLinks: true
+    giscus:
+        id: "comments"
+        repo: "dendronhq/cascadia-js-2022"
+        repoId: "R_kgDOH5vYkQ"
+        category: "Announcements"
+        categoryId: "DIC_kwDOH5vYkc4CRHwm"
+        mapping: "pathname"
+        theme: "preferred_color_scheme"
+        strict: 0
+        reactionsEnabled: 1
+        emitMetadata: 0
+        inputPosition: "top"
+        lang: "en"
+        loading: "lazy"
     logoPath: logo.png
     ga: 
         tracking: "G-VFTZJ909T3"
