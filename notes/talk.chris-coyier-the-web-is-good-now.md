@@ -2,7 +2,7 @@
 id: chris-coyier
 title: The Web is Good Now
 desc: ''
-updated: 1661965387246
+updated: 1661965395106
 created: 1661819714159
 tags:
   - typography
@@ -80,27 +80,3 @@ Runs the shop talk podcast?
 		- Other tools with cloudinary
 			-imgix and codepen (another one shown)...
 	- "Browsers are sneaky bastards", they should abide by standards, the web is good as long as people are vigilant.
-
-
-
-
-
-<!-- KEEP this at the bottom to enable discussions for this page -->
-
-<script src="https://giscus.app/client.js"
-	data-repo="dendronhq/cascadia-js-2022"
-	data-repo-id="R_kgDOH5vYkQ"
-	data-category="Announcements"
-	data-category-id="DIC_kwDOH5vYkc4CRHwm"
-	data-mapping="pathname"
-	data-strict="0"
-	data-reactions-enabled="1"
-	data-emit-metadata="0"
-	data-input-position="top"
-	data-theme="preferred_color_scheme"
-	data-lang="en"
-	data-loading="lazy"
-	crossorigin="anonymous"
-	async>
-</script>
-	
