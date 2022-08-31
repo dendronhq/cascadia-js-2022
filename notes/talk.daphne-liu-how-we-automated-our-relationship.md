@@ -2,7 +2,7 @@
 id: daphne-liu
 title: How We Automated our Relationship
 desc: ''
-updated: 1661898027703
+updated: 1661923588878
 created: 1661898027703
 tags:
   - javascript
@@ -25,6 +25,12 @@ enableGiscus: true
 ![Daphne Liu image](https://create-4jr.begin.app/_static/2022/daphne-liu.jpg){max-width: 300px}
 - name: Daphne Liu
 - [Speaker Page](https://2022.cascadiajs.com/speakers/daphne-liu)
+
+---
+
+![Tiger Oakes image](https://create-4jr.begin.app/_static/2022/tiger-oakes.jpg){max-width: 300px}
+- name: Tiger Oakes
+- [Speaker Page](https://2022.cascadiajs.com/speakers/tiger-oakes)
 
 ## Abstract
 
