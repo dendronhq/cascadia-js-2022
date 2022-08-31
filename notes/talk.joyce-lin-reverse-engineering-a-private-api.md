@@ -2,7 +2,7 @@
 id: joyce-lin
 title: Reverse Engineering a Private API
 desc: ''
-updated: 1661898027720
+updated: 1661984535384
 created: 1661898027720
 tags:
   - api
@@ -48,3 +48,6 @@ Learn how to inspect APIs for when you're working with poorly documented ones, d
 - replay API calls, can be difficult to run one call long term due to expiring info
 - if scraping dynamic websites, a lot of the info won't immediately be there
 - Googlebot user-agent can help view HTML
+
+![[talk.joyce-lin-reverse-engineering-a-private-api.kevinslin.*]]
+
