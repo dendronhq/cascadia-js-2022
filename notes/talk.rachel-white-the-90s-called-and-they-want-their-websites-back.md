@@ -2,7 +2,7 @@
 id: rachel-white
 title: The 90s Called and They Want Their Websites Back
 desc: ''
-updated: 1661898027734
+updated: 1661973303881
 created: 1661898027734
 tags:
   - jamstack
@@ -29,3 +29,5 @@ enableGiscus: true
 No server configuration? No problem! With serverless & JAMStack becoming more and more popular, it’s like static sites never went out of fashion. Though, unlike the 90s, we don’t have to sacrifice style for performance. Let’s recreate a Japanese style photo booth with React & WebAssembly!
 
 ## Notes
+
+![[talk.rachel-white-the-90s-called-and-they-want-their-websites-back.*]]
