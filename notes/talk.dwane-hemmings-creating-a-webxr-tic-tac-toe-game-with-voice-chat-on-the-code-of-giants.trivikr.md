@@ -1,3 +1,11 @@
+---
+id: y4sj1swdvdc8xhp9bknoxzk
+title: Trivikr
+desc: ''
+updated: 1662073096019
+created: 1662073093007
+---
+
 - Dwane created a project to do real-time transcription.
 - Dwane will use Attack on Titans reference during the talk.
 - https://TicReactToe.com which creates a video chat for players playing the game.
