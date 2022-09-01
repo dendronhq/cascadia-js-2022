@@ -2,7 +2,7 @@
 id: vladimir-de-turckheim
 title: Join the super secret V8 club and become a JavaScriptbender
 desc: ''
-updated: 1661898027757
+updated: 1662048292570
 created: 1661898027757
 tags:
   - v8
@@ -32,3 +32,5 @@ enableGiscus: true
 Multiple features in V8 and Node.js are not fully documented or less known by most users. These features can be used to optimize the execution of code or debug it with superpowers.
 
 ## Notes
+
+![[talk.vladimir-de-turckheim-join-the-super-secret-v8-club-and-become-a-javascriptbender.*]]
