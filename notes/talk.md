@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1662069349412
+updated: 1662069384783
 created: 1661792922568
 ---
 
@@ -29,5 +29,6 @@ All speakers and talks
 
 - [[A Few Good Design Patterns|talk.saimon-sharif-a-few-good-design-patterns]]
 - [[Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants|talk.dwane-hemmings-creating-a-webxr-tic-tac-toe-game-with-voice-chat-on-the-code-of-giants]]
+- [[Learning and Managing Code with Code Notebooks|talk.rebecca-peltz-learning-and-managing-code-with-code-notebooks]]
 ## Talks
 ![[talk.*]]
