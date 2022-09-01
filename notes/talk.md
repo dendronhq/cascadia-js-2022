@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1662058086228
+updated: 1662066615519
 created: 1661792922568
 ---
 
@@ -27,5 +27,6 @@ All speakers and talks
 - [[Making tech careers accessible for everyone|talk.brittany-joiner-making-tech-careers-accessible-for-everyone]]
 - [[How We Automated our Relationship|talk.daphne-liu-how-we-automated-our-relationship]]
 
+- [[A Few Good Design Patterns|talk.saimon-sharif-a-few-good-design-patterns]]
 ## Talks
 ![[talk.*]]
