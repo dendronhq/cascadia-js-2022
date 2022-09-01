@@ -7,7 +7,7 @@ created: 1661811054330
 ---
 
 
-We have the following items up for raffle during CascadiaJS 2022. Everyone that has a [[pull request|home.contributing]] merged by 8:00PM PST Thursday will be eligible to win!
+We have the following items up for raffle during CascadiaJS 2022. Everyone that has a [[pull request|home.contributing]] merged by 8:00PM PDT Thursday will be eligible to win!
 
 ### [iPad Air (M1)](https://www.apple.com/ipad-air/)
 ![Mac Air](https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-202203?wid=3530&hei=4000&fmt=jpeg&qlt=90&.v=1645665079887){max-width: 300px}
