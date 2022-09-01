@@ -6,9 +6,9 @@ updated: 1661901679613
 created: 1661807247613
 ---
 
-Welcome traveler! You've arrived at the [Dendron](https://www.dendron.so/) workspace for [CascadiaJS 2022](https://2022.cascadiajs.com/)! Dendron is the open source knowledge base for developers. All pages here are published from plaintext markdown and manged using git and github.
+Welcome traveler! You've arrived at the [Dendron](https://www.dendron.so/) workspace for [CascadiaJS 2022](https://2022.cascadiajs.com/)! Dendron is the open source knowledge base for developers. All pages here are published from plaintext markdown and managed using git and GitHub.
 
-You can fork the [github repo](https://github.com/dendronhq/cascadia-js-2022) to get offline access to all the talks of CascadiaJS 2022. 
+You can fork the [GitHub repo](https://github.com/dendronhq/cascadia-js-2022) to get offline access to all the talks of CascadiaJS 2022. 
 If you open this workspace using [VSCode](https://code.visualstudio.com/), you can use Dendron to navigate these notes as well as to add your own. 
 
 ![Dendron Workspace](https://ik.imagekit.io/fpjzhqpv1/Fullscreen_8_29_22__6_01_PM_-rO3FY3p9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661821303348)
@@ -36,7 +36,7 @@ If you feel inclined, you can also contribute your notes on talks back to this w
 
 ## Be part of the conversation
 
-Every talk has a discussions thread underneath powered by [github discussions](https://giscus.app/). You can use this space to show speakers your appreciation and give feedback!
+Every talk has a discussions thread underneath powered by [GitHub discussions](https://giscus.app/). You can use this space to show speakers your appreciation and give feedback!
 
 <div style="position: relative; padding-bottom: 64.5933014354067%; height: 0;"><iframe src="https://www.loom.com/embed/192095840b604cf8a2e79c78b1899572" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
