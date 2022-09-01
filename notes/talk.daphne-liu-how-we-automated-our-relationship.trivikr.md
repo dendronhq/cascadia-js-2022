@@ -1,3 +1,11 @@
+---
+id: ftktib25q09q9o5pzmfba6e
+title: Trivikr
+desc: ''
+updated: 1662062141260
+created: 1662062138805
+---
+
 - Tiger Oakes x Daphne Liu
   - Tiger works with Microsoft Loop.
   - Daphne works on Lyft Web App & design systems.

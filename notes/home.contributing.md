@@ -4,7 +4,7 @@ title: Contributing
 desc: ''
 updated: 1661817895828
 created: 1661811133582
-homepage: https://dendronhq.github.io/cascadia-js-2022/
+homepage: 'https://dendronhq.github.io/cascadia-js-2022/'
 ---
 
 ## Adding Notes
