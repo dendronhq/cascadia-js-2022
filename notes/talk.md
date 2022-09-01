@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1662055412920
+updated: 1662058086228
 created: 1661792922568
 ---
 
@@ -24,6 +24,8 @@ All speakers and talks
 - [[Zero-dependency CLIs with Node.js|talk.ian-sutherland-zero-dependency-clis-with-node-js]]
 
 - [[Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants|talk.dwane-hemmings-creating-a-webxr-tic-tac-toe-game-with-voice-chat-on-the-code-of-giants]]
+- [[Making tech careers accessible for everyone|talk.brittany-joiner-making-tech-careers-accessible-for-everyone]]
+- [[How We Automated our Relationship|talk.daphne-liu-how-we-automated-our-relationship]]
 
 ## Talks
 ![[talk.*]]

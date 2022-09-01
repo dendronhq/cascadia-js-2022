@@ -2,7 +2,7 @@
 id: daphne-liu
 title: How We Automated our Relationship
 desc: ''
-updated: 1661923588878
+updated: 1662058061397
 created: 1661898027703
 tags:
   - javascript
@@ -37,3 +37,5 @@ enableGiscus: true
 Want to automate your home? Come learn how to sharpen your skills in Node, APIs, and the Internet of Things while making laundry, cooking, & calendar projects that improve your life and relationship.
 
 ## Notes
+
+![[talk.daphne-liu-how-we-automated-our-relationship.*]]
