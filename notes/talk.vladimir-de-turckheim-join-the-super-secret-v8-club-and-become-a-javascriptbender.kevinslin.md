@@ -85,3 +85,19 @@ created: 1662048274345
 	- etc
 	- most of this is on https://v8.dev/
 
+## Notes by [aminamos](https://github.com/aminamos)
+- v8 is a JS engine
+    - the engine takes JS code as an input and executes it
+- v8 is one of many engines
+- DOM manipulation APIs are not defined in v8
+- node embeds v8 and has JS APIs
+- v8 is embedded (ruby, deno examples)
+- turbofan, sparkplug, ignition
+- [discussion around code optimiziation, de-optimization, re-optimization]
+- are optimized functions better? yes
+- can I check optimization status of a function in the code? yes
+- chrome debug protocol convo, CPU profiling is polling based (and this rate is configurable)
+- can get heap dump, then dig into info in dev tools (all objects, all streams that are currently alive)
+- other toppics
+    - v8 code inilining, WebAssembly, string management, torque language, v8 snapshots
+    - check out https://v8.dev/
