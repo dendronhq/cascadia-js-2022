@@ -2,7 +2,7 @@
 id: rebecca-peltz
 title: Learning and Managing Code with Code Notebooks
 desc: ''
-updated: 1661898027737
+updated: 1662069390167
 created: 1661898027737
 tags:
   - microservices
@@ -31,3 +31,4 @@ enableGiscus: true
 Jupyter Notebooks have been around for almost a decade.  Data Scientists use these notebooks to track their experiments.  Software Developers, like scientists, can benefit from using a Code Notebook which combines markdown with code.
 
 ## Notes
+![[talk.rebecca-peltz-learning-and-managing-code-with-code-notebooks.*]]
