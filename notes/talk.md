@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1662052374342
+updated: 1662055412920
 created: 1661792922568
 ---
 
@@ -22,6 +22,8 @@ All speakers and talks
 
 - [[Join the super secret V8 club and become a JavaScriptbender|talk.vladimir-de-turckheim-join-the-super-secret-v8-club-and-become-a-javascriptbender]]
 - [[Zero-dependency CLIs with Node.js|talk.ian-sutherland-zero-dependency-clis-with-node-js]]
+
+- [[Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants|talk.dwane-hemmings-creating-a-webxr-tic-tac-toe-game-with-voice-chat-on-the-code-of-giants]]
 
 ## Talks
 ![[talk.*]]

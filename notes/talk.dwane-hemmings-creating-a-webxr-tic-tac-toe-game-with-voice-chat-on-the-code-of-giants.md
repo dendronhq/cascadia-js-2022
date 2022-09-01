@@ -2,7 +2,7 @@
 id: dwane-hemmings
 title: Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants
 desc: ''
-updated: 1661898027706
+updated: 1662055407293
 created: 1661898027706
 tags:
   - web-components
@@ -30,3 +30,5 @@ enableGiscus: true
 A journey through taking a seemingly impossible idea to an actual project by combining technologies and tools created by others.
 
 ## Notes
+
+![[talk.dwane-hemmings-creating-a-webxr-tic-tac-toe-game-with-voice-chat-on-the-code-of-giants.*]]
