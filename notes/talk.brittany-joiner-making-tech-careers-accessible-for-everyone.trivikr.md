@@ -1,3 +1,11 @@
+---
+id: avps0bzlgsjy1q704cdo2qd
+title: Trivikr
+desc: ''
+updated: 1662058622621
+created: 1662058619621
+---
+
 - History of Brittany
   - Worked in marketing after university full time for 6 years.
   - Now a full time engineer with Elastic.
