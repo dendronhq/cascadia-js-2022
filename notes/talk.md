@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1662066615519
+updated: 1662069349412
 created: 1661792922568
 ---
 
@@ -28,5 +28,6 @@ All speakers and talks
 - [[How We Automated our Relationship|talk.daphne-liu-how-we-automated-our-relationship]]
 
 - [[A Few Good Design Patterns|talk.saimon-sharif-a-few-good-design-patterns]]
+- [[Creating a WebXR Tic-Tac-Toe game with Voice Chat on the Code of Giants|talk.dwane-hemmings-creating-a-webxr-tic-tac-toe-game-with-voice-chat-on-the-code-of-giants]]
 ## Talks
 ![[talk.*]]
