@@ -2,7 +2,7 @@
 id: qwdt0khxbevqlbrp67nay4w
 title: Talks
 desc: ''
-updated: 1662048271063
+updated: 1662052374342
 created: 1661792922568
 ---
 
@@ -21,6 +21,7 @@ All speakers and talks
 - [[Reverse Engineering a Private API|talk.joyce-lin-reverse-engineering-a-private-api]]
 
 - [[Join the super secret V8 club and become a JavaScriptbender|talk.vladimir-de-turckheim-join-the-super-secret-v8-club-and-become-a-javascriptbender]]
+- [[Zero-dependency CLIs with Node.js|talk.ian-sutherland-zero-dependency-clis-with-node-js]]
 
 ## Talks
 ![[talk.*]]

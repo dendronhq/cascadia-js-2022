@@ -2,7 +2,7 @@
 id: ian-sutherland
 title: Zero-dependency CLIs with Node.js
 desc: ''
-updated: 1661898027712
+updated: 1662050842794
 created: 1661898027712
 tags:
   - node-js
@@ -28,3 +28,5 @@ enableGiscus: true
 Node.js is a popular choice for building dev tools and some recently added features make it possible to build powerful tools without any external dependencies. We’ll look at these new features and show how to use them to build a custom CLI app with zero external dependencies.
 
 ## Notes
+
+![[talk.ian-sutherland-zero-dependency-clis-with-node-js.*]]
