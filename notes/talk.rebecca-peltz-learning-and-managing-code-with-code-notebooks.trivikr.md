@@ -1,3 +1,10 @@
+---
+id: zknd92ho3b9hvioqh64qq75
+title: Trivikr
+desc: ''
+updated: 1662073150577
+created: 1662073150577
+---
 - Becky Peltz has been coding since 1982
   - Curriculum Program Manager for Developer Education at Cloudinary
 - We see some examples of notebooks

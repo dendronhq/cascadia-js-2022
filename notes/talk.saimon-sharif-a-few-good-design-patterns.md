@@ -1,15 +1,15 @@
 ---
 id: saimon-sharif
 title: A Few Good Design Patterns
-desc: ""
+desc: ''
 updated: 1662069413658
 created: 1661898027740
 tags:
   - cognitive-biases
   - engineering-career-growth
   - design-patterns
-location: "Cupertino, CA, USA"
-uri: ""
+location: 'Cupertino, CA, USA'
+uri: ''
 twitter: saimonsharif
 company: Attune Insurance
 pronouns: he/him/his
