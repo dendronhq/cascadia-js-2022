@@ -2,7 +2,7 @@
 id: brittany-joiner
 title: Making tech careers accessible for everyone
 desc: ''
-updated: 1661898027688
+updated: 1662056671158
 created: 1661898027688
 tags:
   - inclusivity
@@ -27,3 +27,5 @@ enableGiscus: true
 If you didn't 'grow up' coding or study comp sci at uni, you might have never considered a technical job. Yet it's totally possible for people midway through their non-technical career to become a developer. But why aren't more people doing it? I go through my journey from marketer to developer and explain the things that helped and hindered me. You'll learn why more folks don't do it and specific things we can all do to change that!
 
 ## Notes
+
+![[talk.brittany-joiner-making-tech-careers-accessible-for-everyone.*]]
