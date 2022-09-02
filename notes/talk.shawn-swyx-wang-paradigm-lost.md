@@ -2,7 +2,7 @@
 id: shawn-swyx-wang
 title: Paradigm Lost
 desc: ''
-updated: 1661898027744
+updated: 1662076843177
 created: 1661898027744
 tags:
   - web
@@ -26,3 +26,4 @@ enableGiscus: true
 In the beginning, Jane and Joe Webdev were tempted by Satan to eat the forbidden UX fruit from the Tree of Three Tier Architecture, and God banished them from paradise forever. Here's how we fight back.
 
 ## Notes
+![[talk.shawn-swyx-wang-paradigm-lost.*]]
