@@ -2,14 +2,14 @@
 id: p0qokuilv2xqvlct6m0lx3l
 title: Dendron Conference Survey
 desc: ''
-updated: 1662080686687
+updated: 1662080730465
 created: 1662078465284
 ---
 
 Take the [Dendron survey](https://airtable.com/shr4jCvgmkc83mz2C) to get a **Dendron Community Sticker** (come to the Dendron table) as well as a priority onboarding link to do a **personalized onboarding** with a Dendron team member. 
 
 ![Dendron Community Sticker](https://ik.imagekit.io/fpjzhqpv1/unknown_8ShT9EKuR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662079059257){max-width: 300px}
-![Dendron Survey QR Code](https://ik.imagekit.io/fpjzhqpv1/qr_xfsxMbiFE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662080651631)
+![Dendron Survey QR Code](https://ik.imagekit.io/fpjzhqpv1/frame_eWpU0fR2S.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662079406940)
 
 ## Survey
 
