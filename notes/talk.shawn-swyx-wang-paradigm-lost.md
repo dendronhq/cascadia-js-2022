@@ -27,3 +27,5 @@ In the beginning, Jane and Joe Webdev were tempted by Satan to eat the forbidden
 
 ## Notes
 ![[talk.shawn-swyx-wang-paradigm-lost.*]]
+
+**Shawn said, DON'T TAKE NOTES!!!**
