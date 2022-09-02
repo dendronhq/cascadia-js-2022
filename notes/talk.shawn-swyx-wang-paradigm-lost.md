@@ -2,7 +2,7 @@
 id: shawn-swyx-wang
 title: Paradigm Lost
 desc: ''
-updated: 1662076843177
+updated: 1662097503986
 created: 1661898027744
 tags:
   - web
@@ -27,5 +27,3 @@ In the beginning, Jane and Joe Webdev were tempted by Satan to eat the forbidden
 
 ## Notes
 ![[talk.shawn-swyx-wang-paradigm-lost.*]]
-
-**Shawn said, DON'T TAKE NOTES!!!**
