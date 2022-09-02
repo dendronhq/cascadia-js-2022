@@ -2,7 +2,7 @@
 id: ldxrdo88lbrvvonrnfuu9h5
 title: Reference
 desc: ''
-updated: 1662080727191
+updated: 1662080774467
 created: 1661985809456
 ---
 
@@ -13,3 +13,6 @@ Useful links for Cascadia:
 
 ## Day 2 Events
 - [Stargazing thread](https://discord.com/channels/853074440069578772/1015010603154276472/1015010620938129461)
+
+## Other
+- [Bend Recommendations](https://discord.com/channels/853074440069578772/993349096226168983/1013911730209951915)
