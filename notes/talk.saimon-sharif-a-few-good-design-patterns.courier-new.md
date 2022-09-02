@@ -1,7 +1,7 @@
 ---
 id: hdjnyz8eg83xbgodnhyjcd3
 title: courier-new
-desc: ""
+desc: ''
 updated: 1662074465010
 created: 1662074096091
 ---

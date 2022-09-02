@@ -1,3 +1,11 @@
+---
+id: 061ufewxfd0tml8i77wtv78
+title: Trivikr
+desc: ''
+updated: 1662079865848
+created: 1662079863053
+---
+
 - Brooklyn is co-founder and CTO of Fission Codes
 - Problem 1: The situation of Services in 2022
   - Allow users to authenticated using Auth Service
