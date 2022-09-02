@@ -2,9 +2,12 @@
 id: 7ifn0jqm45dvq2e5wc6xjo2
 title: CascadiaJS 2022 Notes
 desc: ''
-updated: 1661901679613
+updated: 1662079016319
 created: 1661807247613
 ---
+
+> Coming to the [Cascadia Startup Fair](https://2022.cascadiajs.com/conference/startup-fair)? Consider filling out the 2min Dendron PKM survey!
+![[home.user-survey#^begin]]
 
 Welcome traveler! You've arrived at the [Dendron](https://www.dendron.so/) workspace for [CascadiaJS 2022](https://2022.cascadiajs.com/)! Dendron is the open source knowledge base for developers. All pages here are published from plaintext markdown and managed using git and GitHub.
 

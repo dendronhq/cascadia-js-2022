@@ -2,7 +2,7 @@
 id: brooklyn-zelenka
 title: 'The Dark Forest: Private CRDTs as Global Database'
 desc: ''
-updated: 1661898027693
+updated: 1662076887787
 created: 1661898027693
 tags:
   - web3
@@ -33,3 +33,5 @@ enableGiscus: true
 P2P social networks, local-first apps, and resilient client-side apps need to be private, concurrent, BFT, and run everywhere. Let's look at some recent tools & techniques that make this even possible.
 
 ## Notes
+
+![[talk.brooklyn-zelenka-the-dark-forest-private-crdts-as-global-database.*]]
