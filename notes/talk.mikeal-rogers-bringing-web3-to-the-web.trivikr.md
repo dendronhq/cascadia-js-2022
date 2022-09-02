@@ -1,3 +1,11 @@
+---
+id: 4agbt47m35m4qg3qfbpg7ip
+title: Trivikr
+desc: ''
+updated: 1662080329548
+created: 1662080324484
+---
+
 - Speaker Notes can be viewed at https://tiny.cc/web3-cascadiajs
 - NFT Storage
 - Platform is called Web3.Storage
