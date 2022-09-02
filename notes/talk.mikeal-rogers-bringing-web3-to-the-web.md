@@ -2,7 +2,7 @@
 id: mikeal-rogers
 title: Bringing Web3 to the Web
 desc: ''
-updated: 1661898027731
+updated: 1662079877187
 created: 1661898027731
 tags:
   - web3
@@ -27,3 +27,5 @@ enableGiscus: true
 An overview of Web3 technologies that have recently become easily accessible to all web developers.
 
 ## Notes
+
+![[talk.mikeal-rogers-bringing-web3-to-the-web.*]]
