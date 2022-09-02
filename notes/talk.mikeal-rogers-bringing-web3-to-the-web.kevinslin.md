@@ -2,7 +2,7 @@
 id: hue1p4tehtkv59mbzlgw7l4
 title: Kevinslin
 desc: ''
-updated: 1662079488912
+updated: 1662079526117
 created: 1662078895919
 ---
 
@@ -12,4 +12,8 @@ created: 1662078895919
 	- use ipfs
 - ...
 - ucan protocol
-	- delegation is builtin
+
+- delegation is builtin
+- invocation
+	- any addressable right can be invoked by anyone
+
