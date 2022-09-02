@@ -1,0 +1,195 @@
+<h1 id="doing-data-as-a-frontend-developer"><a aria-hidden="true" class="anchor-heading icon-link" href="#doing-data-as-a-frontend-developer"></a>Doing Data as a Frontend Developer</h1>
+<blockquote>
+<p>The contents here is created from the official <a href="https://2022.cascadiajs.com/speakers/tejas-kumar">CascadiaJS Page</a></p>
+</blockquote>
+<h2 id="overview"><a aria-hidden="true" class="anchor-heading icon-link" href="#overview"></a>Overview</h2>
+<p><img src="https://create-4jr.begin.app/_static/2022/tejas-kumar.jpg" alt="Tejas Kumar image" style="max-width:300px;"></p>
+<ul>
+<li>name: Tejas Kumar</li>
+<li><a href="https://2022.cascadiajs.com/speakers/tejas-kumar">Speaker Page</a></li>
+</ul>
+<h2 id="abstract"><a aria-hidden="true" class="anchor-heading icon-link" href="#abstract"></a>Abstract</h2>
+<p>Web devs are often confused about data. What database do we choose? What are the tradeoffs between NoSQL and MySQL? This talk answers these questions and gives web developers DBA-level skills to help them build with data reliably.</p>
+<h2 id="notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a>Notes</h2>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Data as a front end engineer</span></div>
+<a href="/notes/rvkepa2my9qaq1wzoeomrsp" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="data-as-a-front-end-engineer"><a aria-hidden="true" class="anchor-heading icon-link" href="#data-as-a-front-end-engineer"></a>Data as a front end engineer</h3>
+<ul>
+<li>Works at zeta</li>
+<li>Goal is to eliminate imposter syndrome</li>
+</ul>
+<h3 id="sql-or-nosql"><a aria-hidden="true" class="anchor-heading icon-link" href="#sql-or-nosql"></a>SQL or NoSQL?</h3>
+<p>… relational vs non relational</p>
+<h3 id="sql"><a aria-hidden="true" class="anchor-heading icon-link" href="#sql"></a>SQL</h3>
+<p>Pros</p>
+<ul>
+<li>Declarative</li>
+<li>Normalization - reduce redundancy
+<ul>
+<li>Great for connecting data together</li>
+</ul>
+</li>
+</ul>
+<p>limitations</p>
+<ul>
+<li>Hard to scale</li>
+</ul>
+<h3 id="nosql"><a aria-hidden="true" class="anchor-heading icon-link" href="#nosql"></a>NoSQL</h3>
+<ul>
+<li>Built for scale</li>
+<li>Heavily partitionable</li>
+<li>BASE - response to ACID
+<ul>
+<li>Basically available soft state eventually consistent</li>
+</ul>
+</li>
+</ul>
+<h3 id="newsql"><a aria-hidden="true" class="anchor-heading icon-link" href="#newsql"></a>NewSQL</h3>
+<ul>
+<li>AWS aurora</li>
+<li>Convenience of sql with scale</li>
+</ul>
+<p>You can use both… relational for current data Non relational for old archival data.</p>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Hunter</span></div>
+<a href="/notes/ra92i9igvtfhtgr0gyydqth" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><ul>
+<li>adven-Tejas
+<ul>
+<li>works at xeta</li>
+</ul>
+</li>
+<li>SQL
+<ul>
+<li>Has ACID interactions with the database
+<ul>
+<li>Atomicity</li>
+<li>Consistency (TS at database level)</li>
+<li>Isolation</li>
+<li>Durability</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data Infrastructure > Database
+<ul>
+<li>It's more important how you have things setup.  You could move between a relational and a non-relational database.</li>
+<li>Search engine is part of data infrastructure.</li>
+</ul>
+</li>
+<li>Tribalism is bad.</li>
+</ul>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Kevinlin</span></div>
+<a href="/notes/z7k6unnw9x4wvkxb4qvtjzb" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>data in the browser, lots of variations</p>
+</li>
+<li>
+<p>backend </p>
+<ul>
+<li>aws </li>
+<li>sql vs nosql</li>
+<li>relational vs non-relationsnal</li>
+</ul>
+</li>
+<li>
+<p>relational &#x26; acid</p>
+<ul>
+<li>atomicity</li>
+<li>consistensity</li>
+<li>integrity</li>
+<li>data partition</li>
+</ul>
+</li>
+<li>
+<p>limitation is scalability</p>
+</li>
+<li>
+<p>nosql</p>
+<ul>
+<li>great for scale</li>
+<li>unstructured</li>
+<li>partionable</li>
+</ul>
+</li>
+<li>
+<p>base</p>
+<ul>
+<li>basically available</li>
+<li>soft state </li>
+<li>eventual consistency</li>
+</ul>
+</li>
+<li>
+<p>new sql</p>
+<ul>
+<li>sql &#x26; nosql</li>
+<li>eg. aurora, fauna</li>
+</ul>
+</li>
+<li>
+<p>what to use</p>
+<ul>
+<li>it depends</li>
+<li>bank deposit: sql</li>
+<li>upvotes: nosql</li>
+</ul>
+</li>
+<li>
+<p>why not both?</p>
+<ul>
+<li>data infrastructure > database</li>
+</ul>
+</li>
+<li>
+<p>takeaways</p>
+<ul>
+<li>tribalism is bad</li>
+<li>integrity good</li>
+<li>data > databases</li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/notes/rvkepa2my9qaq1wzoeomrsp">Data as a front end engineer</a></li>
+<li><a href="/notes/ra92i9igvtfhtgr0gyydqth">Hunter</a></li>
+<li><a href="/notes/z7k6unnw9x4wvkxb4qvtjzb">Kevinlin</a></li>
+</ol>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #40a368;" href="/notes/sqlite">sqlite</a></li>
+<li><a class="color-tag" style="--tag-color: #26538d;" href="/notes/postgres">postgres</a></li>
+<li><a class="color-tag" style="--tag-color: #8e82fe;" href="/notes/mongodb">mongodb</a></li>
+<li><a class="color-tag" style="--tag-color: #826d8c;" href="/notes/redis">redis</a></li>
+<li><a class="color-tag" style="--tag-color: #0485d1;" href="/notes/node-js">node-js</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/notes/qwdt0khxbevqlbrp67nay4w">Talks</a></li>
+</ul>

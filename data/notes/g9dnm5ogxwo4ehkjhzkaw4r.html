@@ -1,0 +1,78 @@
+<h1 id="aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#aminamos"></a>Aminamos</h1>
+<h2 id="notes-by-aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-aminamos"></a>Notes by <a href="https://github.com/aminamos">aminamos</a></h2>
+<ul>
+<li>topics
+<ul>
+<li>what is a cli</li>
+<li>what are dependencies, why avoid them</li>
+<li>what helps us write cli apps</li>
+<li>new upcoming nodejs features </li>
+</ul>
+</li>
+<li>CLIs use flags/options</li>
+<li>why build with node?
+<ul>
+<li>usually a language your team is already familiar with</li>
+<li>JSON data operations, network requests are pretty well supported</li>
+<li>node has a package ecosystem (useful when needed, still avoid when possible)</li>
+</ul>
+</li>
+<li>dependencies
+<ul>
+<li>code that your program needs to run</li>
+<li>all users of your app will need to install dependencies</li>
+<li>smaller apps, like  CLIs, not having an install or build step makes setup, contributing, and distribution easier</li>
+</ul>
+</li>
+<li>new node syntax
+<ul>
+<li>import instead of require</li>
+<li>ESM instead of CJS</li>
+</ul>
+</li>
+<li>argument parsing
+<ul>
+<li>this process is surprisingly complicated</li>
+<li><a href="https://nodejs.org/docs/latest/api/process.html#processargv">https://nodejs.org/docs/latest/api/process.html#processargv</a></li>
+<li>third party library like yargs or commander, in the past</li>
+<li>parseArgs is ~the future~ as of node 18.3 (potentially backported to node 16)
+<ul>
+<li>polyfill proposal for util.parseArgs() - <a href="https://www.npmjs.com/package/@pkgjs/parseargs">https://www.npmjs.com/package/@pkgjs/parseargs</a></li>
+<li>doesn't support all previous functionality, but useful error messages</li>
+<li><a href="https://nodejs.org/api/util.html#utilparseargsconfig">https://nodejs.org/api/util.html#utilparseargsconfig</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fetch
+<ul>
+<li>before fetch, had to do a lot of pre-work to setup, run, and handle http requests</li>
+<li>with fetch you can just <code>await fetch()</code> and return the body/errors</li>
+<li><code>git blast</code> is real <a href="https://github.com/iansu/git-blast">https://github.com/iansu/git-blast</a></li>
+</ul>
+</li>
+<li>test runner
+<ul>
+<li><a href="https://nodejs.org/api/test.html#test-runner">https://nodejs.org/api/test.html#test-runner</a></li>
+</ul>
+</li>
+<li>recursive file system operations
+<ul>
+<li><a href="https://nodejs.org/api/fs.html#fspromisesmkdirpath-options">https://nodejs.org/api/fs.html#fspromisesmkdirpath-options</a></li>
+<li><a href="https://nodejs.org/api/fs.html#fspromisesrmpath-options">https://nodejs.org/api/fs.html#fspromisesrmpath-options</a></li>
+<li>recursive copy</li>
+</ul>
+</li>
+<li>wild speculation
+<ul>
+<li>self contained executibles</li>
+<li>glob</li>
+<li>typescript <code>node index.ts</code></li>
+</ul>
+</li>
+<li>what's next, ways to contribute
+<ul>
+<li>join node tooling group <a href="https://github.com/nodejs/tooling">https://github.com/nodejs/tooling</a></li>
+</ul>
+</li>
+</ul>

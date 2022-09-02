@@ -1,0 +1,60 @@
+<h1 id="hunt"><a aria-hidden="true" class="anchor-heading icon-link" href="#hunt"></a>Hunt</h1>
+<ul>
+<li>Neo Financial, Head of DEX and OSS</li>
+<li>twitter <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@iansu (Private)</a></li>
+<li>flags
+<ul>
+<li><code>-l1</code> or <code>-l -1</code> Short options</li>
+<li><code>--color</code> Long options</li>
+</ul>
+</li>
+<li>subcommands
+<ul>
+<li>the <code>status</code> in <code>git status</code></li>
+</ul>
+</li>
+<li>"CLI is serious 80s vibes"</li>
+<li>Node has a small core which is why there are lots of dependencies installed with <code>npm</code> for a given project like <code>isNumber</code>.</li>
+<li>Bundling isn't the best because it can still result in a large bundle size.</li>
+<li><code>type: module</code> to package.json to use <code>import</code> and ESMM or us <code>.mjs</code> (as opposed to <code>.cjs</code>).</li>
+<li>import Node.js internals with <code>node:</code>
+<ul>
+<li>eg, <code>import fs from 'node:fs'</code></li>
+</ul>
+</li>
+<li>There are many different ways to set arguments in a cli</li>
+<li>parseArgs: <code>process.argv</code> -> Tedious so use <code>yargs</code> of <code>commander</code>.
+<ul>
+<li>NOT TEDIOUS ANYMORE!  <code>parseArgs from 'node:util'</code> uses <code>process.argsv</code>
+<ul>
+<li>declare the options (kind of like commander)</li>
+</ul>
+</li>
+<li>has polyfill, will be "backboarded" to v16</li>
+</ul>
+</li>
+<li>fetch: now available in node@18
+<ul>
+<li>Built on top of Undici (HTTP/1.1)</li>
+</ul>
+</li>
+<li>see <code>iansu/git-blast</code> on github to run git blast and see people's twitter handle's if supplied on githu</li>
+<li>node@18 now has a basic test runner.
+<ul>
+<li>don't necessarily need jest anymore.</li>
+<li><code>node --test</code></li>
+</ul>
+</li>
+<li>recursive mkdir function with <code>{recursive: true}</code></li>
+<li>recursive rm operation <code>{recursive: true, force: true}</code></li>
+<li>recursive cp (same as mkdir) **experimental</li>
+<li>readdir **open pr, not merged</li>
+<li>Speculation of what's next
+<ul>
+<li>glob patterns</li>
+<li>self contained executables</li>
+<li>native typescript (aka deno)</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://github.com/nodejs/tooling">build the future</a></p>

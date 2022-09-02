@@ -1,0 +1,90 @@
+<h1 id="ross"><a aria-hidden="true" class="anchor-heading icon-link" href="#ross"></a>Ross</h1>
+<h2 id="a-few-good-design-patterns"><a aria-hidden="true" class="anchor-heading icon-link" href="#a-few-good-design-patterns"></a>a few good design patterns</h2>
+<p><strong>Saimon Sharif</strong></p>
+<ul>
+<li>EM at Attune</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>origins from Gang Of Four - Design Patterns book</p>
+<ul>
+<li>book contained 23 design patterns</li>
+</ul>
+</li>
+<li>
+<p>community has different reactions to design patterns</p>
+<ul>
+<li>some seem very obvious</li>
+<li>may seem too complicated</li>
+<li>dynamic languages, eg JS, have different requirements/constraints than Java/etc</li>
+</ul>
+</li>
+<li>
+<p>useful to turn implicit knowledge into explicit</p>
+<ul>
+<li>helpful to name concepts - provides a common language</li>
+<li>code reviews</li>
+</ul>
+</li>
+<li>
+<p>hypothetical example - notepad startup pivoting to NFTs</p>
+<ul>
+<li>going to add 90% discount - add abiity to enable/disable without deploying</li>
+<li>solution: feature flag</li>
+</ul>
+</li>
+<li>
+<p>feature flag lets us enable/disable things without deploying, enable fast rollbacks &#x26; gradual releases</p>
+<ul>
+<li>some vendors have admin panels to facilitate this</li>
+<li>rolling your own feature flag service is a can of worms, don't do it - bad past experiences</li>
+</ul>
+</li>
+<li>
+<p>scenario: feature flag library creates a new websocket connection everytime feature is enabled</p>
+<ul>
+<li>solution: use Singleton, ensure only one connection is created</li>
+<li>singletons useful for accessing shared resources - files, database, cache</li>
+</ul>
+</li>
+<li>
+<p>scenario: add observability to getPrice() function</p>
+<ul>
+<li>using performance API to measure execution time</li>
+<li>would need to change all code to wrap w/calls to performance API</li>
+<li>solution: use decorator pattern to annoitate functions to be instrumented</li>
+<li>decorators - still TC39 proposal, available in Typescript</li>
+<li>decorators are easy to add/remove</li>
+</ul>
+</li>
+<li>
+<p>scenario: getFavorites() function does DB stuff, needs caching</p>
+<ul>
+<li>would like to add caching anywhere in a generic way</li>
+<li>solution: use Proxy pattern</li>
+<li>proxies allow us to control access to an object; we'll use to return cached value</li>
+<li>built-in to Javascript, though syntax is a bit hairy</li>
+<li>example of caching Math.random</li>
+<li>result is clean &#x26; simple w/separation of concerns</li>
+</ul>
+</li>
+<li>
+<p>scenario: CEO wants to launch duplicate NFTs/object feature</p>
+<ul>
+<li>like JQuery or Knex - method chaining, use their own DSL</li>
+<li>solution: fluent interfaces</li>
+<li>our own version of method chaining</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>two ways of learning
+<ul>
+<li>just-in-time vs just-in-case</li>
+<li>neither better, good to know your bias</li>
+<li>try the opposite of your normal way of learning</li>
+</ul>
+</li>
+</ul>

@@ -1,0 +1,53 @@
+<h1 id="kevinslin"><a aria-hidden="true" class="anchor-heading icon-link" href="#kevinslin"></a>Kevinslin</h1>
+<h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>dependencies breaking is bad</li>
+<li>Browsers broke stuff all the time back in the day, most browsers are backwards compatible now.</li>
+<li>Build around what will not break in the next 10 years, not what you think will change.</li>
+<li>additive changes help with not breaking things
+<ul>
+<li>http1 -> http2</li>
+<li>xml http request -> fetch</li>
+<li>async/await</li>
+<li><code>&#x3C;script type="module">&#x3C;/script></code></li>
+<li>woff -> woff2</li>
+<li>s3.listobjectsv2</li>
+</ul>
+</li>
+<li>lots of moving parts</li>
+<li>Can we simplify? Yes! <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>
+<ul>
+<li>Start working with HTML and add JS on top of that.</li>
+<li>good for accessibility, audience usage and also help with dependencies</li>
+</ul>
+</li>
+<li>framework are incorporating this
+<ul>
+<li><a href="https://www.11ty.dev/">11ty</a>, <a href="https://remix.run/">remix</a>, <a href="https://astro.build/">astro</a></li>
+</ul>
+</li>
+</ul>
+<p>Enhance is a project built in the HTML first, JS and CSS on later manner.</p>
+<ul>
+<li>
+<p>api routes</p>
+</li>
+<li>
+<p>its kind of like php, not a bad thing</p>
+</li>
+<li>
+<p>file based routing with plain html</p>
+</li>
+<li>
+<p>reuse markup wtih custom elements</p>
+</li>
+<li>
+<p>built-in utilities</p>
+</li>
+<li>
+<p>uses pure functions to return HTML components</p>
+</li>
+<li>
+<p>Poor Man's Debugger - <code>JSON.stringify(state, null, 2)</code></p>
+</li>
+</ul>

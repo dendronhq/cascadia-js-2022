@@ -1,0 +1,31 @@
+<h1 id="aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#aminamos"></a>Aminamos</h1>
+<h2 id="notes-by-aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-aminamos"></a>Notes by <a href="https://github.com/aminamos">aminamos</a></h2>
+<ul>
+<li><a href="https://www.toptal.com/back-end/reverse-engineering-the-private-api-hacking-your-couch">https://www.toptal.com/back-end/reverse-engineering-the-private-api-hacking-your-couch</a></li>
+<li><a href="https://blog.tendigi.com/starbucks-should-really-make-their-apis-public-6b64a1c2e923">https://blog.tendigi.com/starbucks-should-really-make-their-apis-public-6b64a1c2e923</a></li>
+<li>keep in mind
+<ul>
+<li>review the terms of service before starting this</li>
+<li>find a path for "responsible disclosure"</li>
+<li>be ethical</li>
+</ul>
+</li>
+<li>three common items to analyze
+<ul>
+<li>individual API request</li>
+<li>session details</li>
+<li>stream of HTTP requests</li>
+</ul>
+</li>
+<li>can use dev tools to copy as curl --> bring into Postman (or API tool) as raw text</li>
+<li>can also look into session details, via HAR files</li>
+<li>the exported HAR can be imported into <a href="https://www.postman.com/postman/workspace/postman-answers/documentation/9215231-dd262075-9008-429c-8039-c8c67ee9bf67">Postman</a> (P.S. also <a href="https://toolbox.googleapps.com/apps/har_analyzer/">https://toolbox.googleapps.com/apps/har_analyzer/</a>)</li>
+<li>Postman can also be used as a proxy that captures HTTP requests <a href="https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/">https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/</a>
+<ul>
+<li>also works on mobile <a href="https://blog.postman.com/using-postman-proxy-to-capture-and-inspect-api-calls-from-ios-or-android-devices/">https://blog.postman.com/using-postman-proxy-to-capture-and-inspect-api-calls-from-ios-or-android-devices/</a></li>
+</ul>
+</li>
+<li>replay API calls, can be difficult to run one call long term due to expiring info</li>
+<li>if scraping dynamic websites, a lot of the info won't immediately be there</li>
+<li>Googlebot user-agent can help view HTML</li>
+</ul>

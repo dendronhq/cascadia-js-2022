@@ -1,0 +1,38 @@
+<h1 id="courier-new"><a aria-hidden="true" class="anchor-heading icon-link" href="#courier-new"></a>courier-new</h1>
+<h2 id="intro"><a aria-hidden="true" class="anchor-heading icon-link" href="#intro"></a>Intro</h2>
+<ul>
+<li>Dynamic languages will benefit from different design patterns from static or compiled languages</li>
+<li>Why care about design patterns? Knowing the name for a concept gives us a common language to discuss them with.</li>
+</ul>
+<h2 id="an-opinionated-list-of-good-design-patterns"><a aria-hidden="true" class="anchor-heading icon-link" href="#an-opinionated-list-of-good-design-patterns"></a>An opinionated list of good design patterns</h2>
+<p>...Some of which come from the <a href="https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns">Design Patterns</a> book by the Gang of Four.</p>
+<h3 id="feature-flags"><a aria-hidden="true" class="anchor-heading icon-link" href="#feature-flags"></a>Feature Flags</h3>
+<ul>
+<li>Not a “traditional” design pattern</li>
+<li>Enable fast rollbacks and gradual releases</li>
+</ul>
+<h3 id="singleton"><a aria-hidden="true" class="anchor-heading icon-link" href="#singleton"></a>Singleton</h3>
+<ul>
+<li>Guarantee a given class only has one instance while making that instance globally available</li>
+<li>Enable access to a shared resource (file, DB, web socket, etc.)</li>
+</ul>
+<h3 id="decorator"><a aria-hidden="true" class="anchor-heading icon-link" href="#decorator"></a>Decorator</h3>
+<ul>
+<li>Attach instrumentation (such as tracing) to another function</li>
+<li>TS has first-class <a href="https://www.typescriptlang.org/docs/handbook/decorators.html">decorators</a></li>
+<li>TC39 has <a href="https://github.com/tc39/proposal-decorators">stage 3 proposal</a> for decorators</li>
+<li>Multiple types: method decorator, class decorator</li>
+</ul>
+<h3 id="proxy"><a aria-hidden="true" class="anchor-heading icon-link" href="#proxy"></a>Proxy</h3>
+<ul>
+<li>Enables controlling access to an object</li>
+<li>Built-in <code>Proxy</code> in JS: <code>new Proxy(obj, handler)</code> where handler intercepts and redefines what methods (such as <code>obj.get</code> should return)</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">Mozilla docs</a></li>
+</ul>
+<h3 id="fluent-interface"><a aria-hidden="true" class="anchor-heading icon-link" href="#fluent-interface"></a>Fluent Interface</h3>
+<ul>
+<li>An object-oriented API that relies on method chaining</li>
+<li>Increase code legibility and composability with a domain-specific language</li>
+</ul>
+<h2 id="ending-thoughts"><a aria-hidden="true" class="anchor-heading icon-link" href="#ending-thoughts"></a>Ending thoughts</h2>
+<p>Consider if you’re more of a just-in-time learner or a just-in-case learner, and give the other type a try sometime!</p>

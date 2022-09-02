@@ -1,0 +1,87 @@
+<h1 id="reverse-engineering-a-private-api"><a aria-hidden="true" class="anchor-heading icon-link" href="#reverse-engineering-a-private-api"></a>Reverse Engineering a Private API</h1>
+<p>Head of Developer Relations, Postman</p>
+<h3 id="capturing-network-traffic"><a aria-hidden="true" class="anchor-heading icon-link" href="#capturing-network-traffic"></a>Capturing network traffic</h3>
+<p>HTTP files</p>
+<ul>
+<li>chrome dev tools</li>
+<li>Right click on network call to copy as curl</li>
+<li>Paste into postman as raw text</li>
+<li>Can then replay and call in postman</li>
+</ul>
+<p>Session capture</p>
+<ul>
+<li>har files right click and save all as har</li>
+<li>in postman inspect a the HAR file
+<ul>
+<li>har is used for ession replay</li>
+</ul>
+</li>
+</ul>
+<p>Capture stream of HTTP API Requests</p>
+<ul>
+<li>use web proxy to capture a stream of HTTP</li>
+<li>Postman has a free proxy tool
+<ul>
+<li>
+<p>alternatives fiddler, etc.</p>
+</li>
+<li>
+<p>Postman interceptor chrome extension</p>
+<ul>
+<li>can apply filters by subdomain</li>
+<li>see ajax calls</li>
+</ul>
+</li>
+<li>
+<p>in postman desktop create a new collection to capture proxy calls from chrom extension</p>
+<p>Proxy through postman, and save as a collection</p>
+</li>
+<li>
+<p>capture requests</p>
+</li>
+<li>
+<p>will show connection</p>
+</li>
+<li>
+<p>filter and will proxy all calls live into postmn</p>
+</li>
+<li>
+<p>Stop session, will give analytics afterwords</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Proxy mobile app</p>
+<ul>
+<li>see slide</li>
+</ul>
+<h3 id="replay-api-calls"><a aria-hidden="true" class="anchor-heading icon-link" href="#replay-api-calls"></a>Replay API Calls</h3>
+<p>Once you intercept sending reques again after a duration doesn’t work (auth expires)</p>
+<ul>
+<li>Cookie Auth
+<ul>
+<li>Cookie tab in github</li>
+<li>manually add cookies to sync w chrome browser → will log you in</li>
+<li>set cookie in header is the one you use in all your cookies going forward</li>
+</ul>
+</li>
+<li>can get curl request out of postman so you know how to format the api call so it works</li>
+</ul>
+<p><strong>Spoofing client attributes</strong></p>
+<ul>
+<li>User agent header</li>
+<li>User-Agent -> Googlebot/2.1
+<ul>
+<li>Everyone wants to be scraped by google</li>
+<li>USE THIS AS YOUR USER AGENT</li>
+</ul>
+</li>
+<li>Replay in code → roll into bot
+<ul>
+<li>Use code snippet from postman</li>
+</ul>
+</li>
+</ul>
+<p>Alissa Knight → hacker</p>
+<p><strong>Hyrums Law</strong></p>
+<p>"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."</p>

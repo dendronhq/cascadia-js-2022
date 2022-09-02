@@ -1,0 +1,49 @@
+<h1 id="hunt"><a aria-hidden="true" class="anchor-heading icon-link" href="#hunt"></a>Hunt</h1>
+<ul>
+<li>There were many design patterns and pattern languages before the Gang of Four was released.</li>
+<li>Calls Hacker News the "orange website". </li>
+<li>Works as an engineering manager at Attune</li>
+<li>Design Patterns are <em>obviously</em> worthwhile.</li>
+<li>How to enable and disable a discount without needing to redeploy?
+<ul>
+<li>Feature flag: allow disabling and enabling things without deploying
+<ul>
+<li>Fast rollback</li>
+<li>Gradual releases</li>
+<li>"don't roll your own feature flag"</li>
+</ul>
+</li>
+<li>Singleton pattern to fix an issue with a websocket being made every time a feature flag is set (?)
+<ul>
+<li>calls the singleton <code>static #&#x3C;name> = null</code> &#x3C;&#x3C;using a variable name starting with a #>>.</li>
+</ul>
+</li>
+<li>Trace function -> Heatmap</li>
+<li>Decorator pattern: wrap object and add new bheavior to those objects.
+<ul>
+<li>easy to remove, since you can easily remove the line of code</li>
+</ul>
+</li>
+<li>Proxy pattern
+<ul>
+<li>controls access to an object</li>
+<li>returns a cached vaalue</li>
+<li><code>Proxy</code> exists in JS</li>
+<li><code>new Proxy(obj, handler)</code>;
+<ul>
+<li>handler is an object with a function "get" used to trap the return value</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">mdn proxy docs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Fluent interface
+-examples
+<pre><code>  - knex query building
+  - jquery
+  - rxjs
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>

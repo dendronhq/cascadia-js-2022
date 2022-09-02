@@ -1,0 +1,332 @@
+<h1 id="zero-dependency-clis-with-nodejs"><a aria-hidden="true" class="anchor-heading icon-link" href="#zero-dependency-clis-with-nodejs"></a>Zero-dependency CLIs with Node.js</h1>
+<blockquote>
+<p>The contents here is created from the official <a href="https://2022.cascadiajs.com/speakers/ian-sutherland">CascadiaJS Page</a></p>
+</blockquote>
+<h2 id="overview"><a aria-hidden="true" class="anchor-heading icon-link" href="#overview"></a>Overview</h2>
+<p><img src="https://create-4jr.begin.app/_static/2022/ian-sutherland.jpg" alt="Ian Sutherland image" style="max-width:300px;"></p>
+<ul>
+<li>name: Ian Sutherland</li>
+<li><a href="https://2022.cascadiajs.com/speakers/ian-sutherland">Speaker Page</a></li>
+</ul>
+<h2 id="abstract"><a aria-hidden="true" class="anchor-heading icon-link" href="#abstract"></a>Abstract</h2>
+<p>Node.js is a popular choice for building dev tools and some recently added features make it possible to build powerful tools without any external dependencies. We’ll look at these new features and show how to use them to build a custom CLI app with zero external dependencies.</p>
+<h2 id="notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a>Notes</h2>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Aminamos</span></div>
+<a href="/notes/g9dnm5ogxwo4ehkjhzkaw4r" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h2 id="notes-by-aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-aminamos"></a>Notes by <a href="https://github.com/aminamos">aminamos</a></h2>
+<ul>
+<li>topics
+<ul>
+<li>what is a cli</li>
+<li>what are dependencies, why avoid them</li>
+<li>what helps us write cli apps</li>
+<li>new upcoming nodejs features </li>
+</ul>
+</li>
+<li>CLIs use flags/options</li>
+<li>why build with node?
+<ul>
+<li>usually a language your team is already familiar with</li>
+<li>JSON data operations, network requests are pretty well supported</li>
+<li>node has a package ecosystem (useful when needed, still avoid when possible)</li>
+</ul>
+</li>
+<li>dependencies
+<ul>
+<li>code that your program needs to run</li>
+<li>all users of your app will need to install dependencies</li>
+<li>smaller apps, like  CLIs, not having an install or build step makes setup, contributing, and distribution easier</li>
+</ul>
+</li>
+<li>new node syntax
+<ul>
+<li>import instead of require</li>
+<li>ESM instead of CJS</li>
+</ul>
+</li>
+<li>argument parsing
+<ul>
+<li>this process is surprisingly complicated</li>
+<li><a href="https://nodejs.org/docs/latest/api/process.html#processargv">https://nodejs.org/docs/latest/api/process.html#processargv</a></li>
+<li>third party library like yargs or commander, in the past</li>
+<li>parseArgs is ~the future~ as of node 18.3 (potentially backported to node 16)
+<ul>
+<li>polyfill proposal for util.parseArgs() - <a href="https://www.npmjs.com/package/@pkgjs/parseargs">https://www.npmjs.com/package/@pkgjs/parseargs</a></li>
+<li>doesn't support all previous functionality, but useful error messages</li>
+<li><a href="https://nodejs.org/api/util.html#utilparseargsconfig">https://nodejs.org/api/util.html#utilparseargsconfig</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fetch
+<ul>
+<li>before fetch, had to do a lot of pre-work to setup, run, and handle http requests</li>
+<li>with fetch you can just <code>await fetch()</code> and return the body/errors</li>
+<li><code>git blast</code> is real <a href="https://github.com/iansu/git-blast">https://github.com/iansu/git-blast</a></li>
+</ul>
+</li>
+<li>test runner
+<ul>
+<li><a href="https://nodejs.org/api/test.html#test-runner">https://nodejs.org/api/test.html#test-runner</a></li>
+</ul>
+</li>
+<li>recursive file system operations
+<ul>
+<li><a href="https://nodejs.org/api/fs.html#fspromisesmkdirpath-options">https://nodejs.org/api/fs.html#fspromisesmkdirpath-options</a></li>
+<li><a href="https://nodejs.org/api/fs.html#fspromisesrmpath-options">https://nodejs.org/api/fs.html#fspromisesrmpath-options</a></li>
+<li>recursive copy</li>
+</ul>
+</li>
+<li>wild speculation
+<ul>
+<li>self contained executibles</li>
+<li>glob</li>
+<li>typescript <code>node index.ts</code></li>
+</ul>
+</li>
+<li>what's next, ways to contribute
+<ul>
+<li>join node tooling group <a href="https://github.com/nodejs/tooling">https://github.com/nodejs/tooling</a></li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Hunt</span></div>
+<a href="/notes/qw65fj10qz0hw8aqu1255aq" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><ul>
+<li>Neo Financial, Head of DEX and OSS</li>
+<li>twitter <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@iansu (Private)</a></li>
+<li>flags
+<ul>
+<li><code>-l1</code> or <code>-l -1</code> Short options</li>
+<li><code>--color</code> Long options</li>
+</ul>
+</li>
+<li>subcommands
+<ul>
+<li>the <code>status</code> in <code>git status</code></li>
+</ul>
+</li>
+<li>"CLI is serious 80s vibes"</li>
+<li>Node has a small core which is why there are lots of dependencies installed with <code>npm</code> for a given project like <code>isNumber</code>.</li>
+<li>Bundling isn't the best because it can still result in a large bundle size.</li>
+<li><code>type: module</code> to package.json to use <code>import</code> and ESMM or us <code>.mjs</code> (as opposed to <code>.cjs</code>).</li>
+<li>import Node.js internals with <code>node:</code>
+<ul>
+<li>eg, <code>import fs from 'node:fs'</code></li>
+</ul>
+</li>
+<li>There are many different ways to set arguments in a cli</li>
+<li>parseArgs: <code>process.argv</code> -> Tedious so use <code>yargs</code> of <code>commander</code>.
+<ul>
+<li>NOT TEDIOUS ANYMORE!  <code>parseArgs from 'node:util'</code> uses <code>process.argsv</code>
+<ul>
+<li>declare the options (kind of like commander)</li>
+</ul>
+</li>
+<li>has polyfill, will be "backboarded" to v16</li>
+</ul>
+</li>
+<li>fetch: now available in node@18
+<ul>
+<li>Built on top of Undici (HTTP/1.1)</li>
+</ul>
+</li>
+<li>see <code>iansu/git-blast</code> on github to run git blast and see people's twitter handle's if supplied on githu</li>
+<li>node@18 now has a basic test runner.
+<ul>
+<li>don't necessarily need jest anymore.</li>
+<li><code>node --test</code></li>
+</ul>
+</li>
+<li>recursive mkdir function with <code>{recursive: true}</code></li>
+<li>recursive rm operation <code>{recursive: true, force: true}</code></li>
+<li>recursive cp (same as mkdir) **experimental</li>
+<li>readdir **open pr, not merged</li>
+<li>Speculation of what's next
+<ul>
+<li>glob patterns</li>
+<li>self contained executables</li>
+<li>native typescript (aka deno)</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://github.com/nodejs/tooling">build the future</a></p>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Kevinslin</span></div>
+<a href="/notes/4b497d1vn38zxs2m2nq2cqz" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>cli apps</p>
+<ul>
+<li>stuff that runs on the terminal</li>
+</ul>
+</li>
+<li>
+<p>features</p>
+<ul>
+<li>options (eg. <code>ls</code>)</li>
+<li>subcommands (eg. <code>git</code>)</li>
+</ul>
+</li>
+<li>
+<p>why node</p>
+<ul>
+<li>scripting language</li>
+<li>good at json, parallel task, network request, etc</li>
+<li>lots of packages</li>
+</ul>
+</li>
+<li>
+<p>dependencies</p>
+<ul>
+<li>other code (eg. library)</li>
+<li>node does not have big standard lib</li>
+</ul>
+</li>
+<li>
+<p>are deps bad?</p>
+<ul>
+<li>depends</li>
+<li>does introduce overhead</li>
+<li>you can bundle to make it better</li>
+</ul>
+</li>
+<li>
+<p>new syntax</p>
+<ul>
+<li>using <code>import</code> (es module)</li>
+<li>import nodejs internals with <code>node:</code> prefix
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports">fs</span> <span class="token keyword module">from</span> <span class="token string">"node:fs"</span>
+</code></pre>
+</li>
+<li>every npm name is taken, we couldn't add anything new, hence new namepsace</li>
+</ul>
+</li>
+<li>
+<p>argument parsing</p>
+<ul>
+<li>old way:
+<pre class="language-js"><code class="language-js"><span class="token comment">// get everything from STDIN, split by whitespace</span>
+<span class="token comment">// eg. [node, mycli, --ls]</span>
+<span class="token keyword">const</span> args <span class="token operator">=</span> process<span class="token punctuation">.</span><span class="token property-access">argv</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>argument parsing</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>parseArgs<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:util"</span>
+<span class="token keyword">const</span> input <span class="token operator">=</span> process<span class="token punctuation">.</span><span class="token property-access">argv</span><span class="token punctuation">.</span><span class="token method function property-access">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">silent</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">short</span><span class="token operator">:</span> <span class="token string">'s'</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>values<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">parseArgs</span><span class="token punctuation">(</span><span class="token punctuation">{</span>input<span class="token punctuation">,</span> options<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">:</span>
+</code></pre>
+</li>
+<li>
+<p>fetch</p>
+<ul>
+<li>make http request</li>
+<li>its available in <strong>node 18</strong></li>
+<li>built on top of undici (http/1.1 client)</li>
+<li>has web streams api</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token comment">// available globally</span>
+<span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword control-flow">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"..."</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> body <span class="token operator">=</span> <span class="token keyword control-flow">await</span> response<span class="token punctuation">.</span><span class="token method function property-access">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// you get JSON</span>
+<span class="token punctuation">{</span>
+	<span class="token spread operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>
+<p>demo to add new git subcommand the old way</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// very long example</span>
+<span class="token comment">// ...</span>
+</code></pre>
+</li>
+<li>
+<p>demo with new way</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// very short example (less than 10 lines)</span>
+<span class="token comment">// ...</span>
+</code></pre>
+</li>
+<li>
+<p>test runner</p>
+<ul>
+<li>basic api to do this</li>
+<li>eg. mocha but builtin to node</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports">test</span> <span class="token keyword module">from</span> <span class="token string">"..."</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"synchornous test"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">t</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+	<span class="token comment">//...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// also works async</span>
+</code></pre>
+</li>
+<li>
+<p>recursive file system ops</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>rm<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:fs/promises"</span>
+
+<span class="token comment">// experimental </span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>cp<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:fs/promises"</span>
+
+<span class="token comment">// doesn't exist yet, open pr</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>readdir<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:fs/promises"</span>
+</code></pre>
+</li>
+<li>
+<p>whats next</p>
+<blockquote>
+<p>DISCLAIMER: complete speculation</p>
+</blockquote>
+<ul>
+<li>glob?</li>
+<li>self contained executable</li>
+<li>typescript (lol - i wish)</li>
+</ul>
+</li>
+</ul></div></div><p></p><p></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/notes/g9dnm5ogxwo4ehkjhzkaw4r">Aminamos</a></li>
+<li><a href="/notes/qw65fj10qz0hw8aqu1255aq">Hunt</a></li>
+<li><a href="/notes/4b497d1vn38zxs2m2nq2cqz">Kevinslin</a></li>
+</ol>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #0485d1;" href="/notes/node-js">node-js</a></li>
+<li><a class="color-tag" style="--tag-color: #044a05;" href="/notes/cli">cli</a></li>
+<li><a class="color-tag" style="--tag-color: #696006;" href="/notes/javascript">javascript</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/notes/qwdt0khxbevqlbrp67nay4w">Talks</a></li>
+</ul>

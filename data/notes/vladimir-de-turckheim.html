@@ -1,0 +1,282 @@
+<h1 id="join-the-super-secret-v8-club-and-become-a-javascriptbender"><a aria-hidden="true" class="anchor-heading icon-link" href="#join-the-super-secret-v8-club-and-become-a-javascriptbender"></a>Join the super secret V8 club and become a JavaScriptbender</h1>
+<blockquote>
+<p>The contents here is created from the official <a href="https://2022.cascadiajs.com/speakers/vladimir-de-turckheim">CascadiaJS Page</a></p>
+</blockquote>
+<h2 id="overview"><a aria-hidden="true" class="anchor-heading icon-link" href="#overview"></a>Overview</h2>
+<p><img src="https://create-4jr.begin.app/_static/2022/vladimir-de-turckheim.jpg" alt="Vladimir de Turckheim image" style="max-width:300px;"></p>
+<ul>
+<li>name: Vladimir de Turckheim</li>
+<li><a href="https://2022.cascadiajs.com/speakers/vladimir-de-turckheim">Speaker Page</a></li>
+</ul>
+<h2 id="abstract"><a aria-hidden="true" class="anchor-heading icon-link" href="#abstract"></a>Abstract</h2>
+<p>Multiple features in V8 and Node.js are not fully documented or less known by most users. These features can be used to optimize the execution of code or debug it with superpowers.</p>
+<h2 id="notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a>Notes</h2>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Hunt</span></div>
+<a href="/notes/rwnkui1frsnnfhdrvt1zktm" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><p><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@polesdesfetes (Private)</a></p>
+<p>Staff engineer at Data Dog.</p>
+<p>V8 Engine</p>
+<ul>
+<li>Takes JS as input and executes it</li>
+<li>Createed by Google, open source, C++
+<ul>
+<li><a href="https://chromium.googlesource.com/v8/v8.git">https://chromium.googlesource.com/v8/v8.git</a></li>
+</ul>
+</li>
+<li><a href="https://v8.dev">good resource</a></li>
+<li><code>document</code> is not defined in V8</li>
+<li>Doesn't just interpret JS
+<ul>
+<li>Parse to AST</li>
+<li>Ignition: bytecode generation</li>
+<li>Sparkplug: fast codegen</li>
+<li>Turbofan: optimized codegen</li>
+<li>reminder you can define numbers as <code>1_000_000</code> in js
+<ul>
+<li><a href="https://www.javascripttutorial.net/es-next/javascript-numeric-separator/">underscore in numbers</a></li>
+</ul>
+</li>
+<li>objects have a Map, a hidden class.</li>
+<li>what is % in fromnt of functions?  It's "Native syntaxes". <code>console.log(%MaxSmi())</code></li>
+<li>You can set V8 flages with node using <code>require('v8').setFlags (?) ('--flag')</code></li>
+<li>Native syntax: undocumented V8 APIs.</li>
+<li>Benchmark JS for testing optimizations... optimizations DO matter, up to 2x faster for a simple add function.</li>
+<li><code>V8OptimizationStoatus()</code> to get the status of optimization</li>
+<li>How do debuggers work?
+<ul>
+<li>Chrome Debug Protocol
+<ul>
+<li>Has a Heap profiler and CPU profiler
+<ul>
+<li>CPU profiling is done with polling, similar to the <code>top</code> program (?)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See the Torque language which compiles directly into v8 bytecode. <a href="https://v8.dev/docs/torque">torque</a></li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Kevinslin</span></div>
+<a href="/notes/aj31lwijqw1m6qymjrbgn6t" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>javascript engine</p>
+<ul>
+<li>multiple engines: v8, spidermonkey, apple jscriptcore</li>
+</ul>
+</li>
+<li>
+<p>v8 executes js in context</p>
+<ul>
+<li>ecmascript web specs not part of v8</li>
+<li>chromium embeds v8 and provides DOM apis</li>
+<li>node embeds v8 and provides system apis</li>
+<li>ruby racer embeds v8 to call js from ruby</li>
+</ul>
+</li>
+<li>
+<p>v8 does not just interpret js</p>
+<ul>
+<li>many parts
+<ul>
+<li>parse, optimization, codegen</li>
+<li>turbofan: part that optimize code</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>optimizing</p>
+<ul>
+<li>what v8 mainly optimizes
+<ul>
+<li>inlinable functions </li>
+<li>function with stable signature</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>functions example</p>
+<ul>
+<li><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#todo (Private)</a></li>
+</ul>
+</li>
+<li>
+<p>objects example</p>
+<ul>
+<li>getObject 1e6 times</li>
+<li>to optimize object, requires
+<ul>
+<li>same fields with same type</li>
+<li>types crated in same order</li>
+</ul>
+</li>
+<li>calling same object initialized with object of different order will stop optimizations</li>
+</ul>
+</li>
+<li>
+<p>native funciton syntax <code>%</code></p>
+<ul>
+<li>run v8 with <code>--allow-native-syntax</code>
+<blockquote>
+<p>TIP: you can set v8 flags inside nodejs</p>
+</blockquote>
+</li>
+<li>native syntax are undocumented v8 apis, used for testing and debugging
+<ul>
+<li>you can find the v8 source</li>
+<li>docs are in v8 tests</li>
+</ul>
+</li>
+<li>can used to manipulate optimization (eg. never optimize this function)</li>
+</ul>
+</li>
+<li>
+<p>what can i do with native functions?</p>
+</li>
+<li>
+<p>question1: are optimized functions faster?</p>
+<ul>
+<li>benchmarkjs to test</li>
+</ul>
+</li>
+<li>
+<p>question2: check optimization status of a function within code</p>
+<ul>
+<li>print to debug</li>
+<li>if you keep opt/de-opt function, v8 will give up on your code </li>
+</ul>
+</li>
+<li>
+<p>question3: can i manipulate memory related stuff</p>
+<ul>
+<li>yes, but please do it</li>
+</ul>
+</li>
+<li>
+<p>how does devtools work</p>
+<ul>
+<li>chrome debug protocol
+<ul>
+<li>websockets</li>
+<li>communicate with v8/chromium</li>
+<li>access debug interface:
+<ul>
+<li>debugger</li>
+<li>heap profiler</li>
+<li>cpu profiling/code coverage</li>
+<li>dom (browser only)</li>
+<li>eg. playwright uses this</li>
+<li>eg. remote debug node</li>
+</ul>
+</li>
+<li>gives access to <strong>everything</strong> in node process</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>debug protocol</p>
+<ul>
+<li>cpu profiling is polling based</li>
+<li>control polling rate from protocol (not available in dev tools)</li>
+</ul>
+</li>
+<li>
+<p>heap profiler</p>
+<ul>
+<li>show everything in heap</li>
+<li>eg. find memory leak</li>
+</ul>
+</li>
+<li>
+<p>why</p>
+<ul>
+<li>remote debugging</li>
+<li>atuomated diagnostics</li>
+<li>script debugging
+<ul>
+<li>eg. add breakpoint</li>
+<li>execute code and check heap</li>
+<li>canbe used in extensions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>other topics</p>
+<ul>
+<li>v8 inlining</li>
+<li>torque language</li>
+<li>v8 treats web assembly</li>
+<li>how v8 manages strings</li>
+<li>etc</li>
+<li>most of this is on <a href="https://v8.dev/">https://v8.dev/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="notes-by-aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-aminamos"></a>Notes by <a href="https://github.com/aminamos">aminamos</a></h2>
+<ul>
+<li>v8 is a JS engine
+<ul>
+<li>the engine takes JS code as an input and executes it</li>
+</ul>
+</li>
+<li>v8 is one of many engines</li>
+<li>DOM manipulation APIs are not defined in v8</li>
+<li>node embeds v8 and has JS APIs</li>
+<li>v8 is embedded (ruby, deno examples)</li>
+<li>turbofan, sparkplug, ignition</li>
+<li>[discussion around code optimiziation, de-optimization, re-optimization]</li>
+<li>are optimized functions better? yes</li>
+<li>can I check optimization status of a function in the code? yes</li>
+<li>chrome debug protocol convo, CPU profiling is polling based (and this rate is configurable)</li>
+<li>can get heap dump, then dig into info in dev tools (all objects, all streams that are currently alive)</li>
+<li>other toppics
+<ul>
+<li>v8 code inilining, WebAssembly, string management, torque language, v8 snapshots</li>
+<li>check out <a href="https://v8.dev/">https://v8.dev/</a></li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/notes/rwnkui1frsnnfhdrvt1zktm">Hunt</a></li>
+<li><a href="/notes/aj31lwijqw1m6qymjrbgn6t">Kevinslin</a></li>
+</ol>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #040348;" href="/notes/v8">v8</a></li>
+<li><a class="color-tag" style="--tag-color: #00022e;" href="/notes/memory-leaks">memory-leaks</a></li>
+<li><a class="color-tag" style="--tag-color: #4f738e;" href="/notes/profiling">profiling</a></li>
+<li><a class="color-tag" style="--tag-color: #017a79;" href="/notes/shadow-classes">shadow-classes</a></li>
+<li><a class="color-tag" style="--tag-color: #0652ff;" href="/notes/chrome">chrome</a></li>
+<li><a class="color-tag" style="--tag-color: #0485d1;" href="/notes/node-js">node-js</a></li>
+<li><a class="color-tag" style="--tag-color: #2976bb;" href="/notes/deno">deno</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/notes/qwdt0khxbevqlbrp67nay4w">Talks</a></li>
+</ul>

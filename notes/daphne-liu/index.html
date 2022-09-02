@@ -1,0 +1,208 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><title>How We Automated our Relationship</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Notes about the cascadiajs 2022 conference"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="thebetterdaphne"/><meta name="twitter:creator" content="thebetterdaphne"/><meta property="og:title" content="How We Automated our Relationship"/><meta property="og:description" content="Notes about the cascadiajs 2022 conference"/><meta property="og:url" content="https://cascadiajs.dendron.so/notes/daphne-liu/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="8/30/2022"/><meta property="article:modified_time" content="9/1/2022"/><meta property="article:tag" content="javascript"/><meta property="article:tag" content="node-js"/><meta property="article:tag" content="side-projects"/><meta property="article:tag" content="hardware"/><meta property="article:tag" content="iot"/><meta property="article:tag" content="api"/><link rel="canonical" href="https://cascadiajs.dendron.so/notes/daphne-liu/"/><meta name="next-head-count" content="23"/><link rel="preload" href="/_next/static/css/cc2307f6fd3a2fec.css" as="style"/><link rel="stylesheet" href="/_next/static/css/cc2307f6fd3a2fec.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-309b1a946ef398d4.js" defer=""></script><script src="/_next/static/chunks/framework-bb5c596eafb42b22.js" defer=""></script><script src="/_next/static/chunks/main-c4b0e551a2150d17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-e48aa4813508a7f0.js" defer=""></script><script src="/_next/static/chunks/855-124c7d93158bd007.js" defer=""></script><script src="/_next/static/chunks/776-959ab9b5289532fd.js" defer=""></script><script src="/_next/static/chunks/pages/notes/%5Bid%5D-9c4f89da4e36492e.js" defer=""></script><script src="/_next/static/cG4jHWN-9Ee6Vlx7UsHjM/_buildManifest.js" defer=""></script><script src="/_next/static/cG4jHWN-9Ee6Vlx7UsHjM/_ssgManifest.js" defer=""></script><script src="/_next/static/cG4jHWN-9Ee6Vlx7UsHjM/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div style="display:flex" class="ant-col ant-col-xs-20 ant-col-sm-4"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"><div class="ant-select ant-select-lg ant-select-auto-complete ant-select-single ant-select-allow-clear ant-select-show-search" style="width:100%"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autoComplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="undefined_list" aria-autocomplete="list" aria-controls="undefined_list" aria-activedescendant="undefined_list_0" value=""/></span><span class="ant-select-selection-placeholder">For full text search please use the &#x27;?&#x27; prefix. e.g. ? Onboarding</span></div></div></div><div style="display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout" style="margin-top:64px;display:flex;flex-direction:row"><div class="site-layout-sidebar" style="flex:0 0 auto;width:calc(max((100% - 992px) / 2, 0px) + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);background-color:transparent;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></div><section class="ant-layout side-layout-main" style="max-width:1200px;display:initial"><main class="ant-layout-content main-content" role="main" style="padding:0 24px"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="how-we-automated-our-relationship"><a aria-hidden="true" class="anchor-heading icon-link" href="#how-we-automated-our-relationship"></a>How We Automated our Relationship</h1>
+<blockquote>
+<p>The contents here is created from the official <a href="https://2022.cascadiajs.com/speakers/daphne-liu">CascadiaJS Page</a></p>
+</blockquote>
+<h2 id="overview"><a aria-hidden="true" class="anchor-heading icon-link" href="#overview"></a>Overview</h2>
+<p><img src="https://create-4jr.begin.app/_static/2022/daphne-liu.jpg" alt="Daphne Liu image" style="max-width:300px;"></p>
+<ul>
+<li>name: Daphne Liu</li>
+<li><a href="https://2022.cascadiajs.com/speakers/daphne-liu">Speaker Page</a></li>
+</ul>
+<hr>
+<p><img src="https://create-4jr.begin.app/_static/2022/tiger-oakes.jpg" alt="Tiger Oakes image" style="max-width:300px;"></p>
+<ul>
+<li>name: Tiger Oakes</li>
+<li><a href="https://2022.cascadiajs.com/speakers/tiger-oakes">Speaker Page</a></li>
+</ul>
+<h2 id="abstract"><a aria-hidden="true" class="anchor-heading icon-link" href="#abstract"></a>Abstract</h2>
+<p>Want to automate your home? Come learn how to sharpen your skills in Node, APIs, and the Internet of Things while making laundry, cooking, &#x26; calendar projects that improve your life and relationship.</p>
+<h2 id="notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a>Notes</h2>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Hunt</span></div>
+<a href="/notes/89zlyj1jivc39t0ibrxz1uc" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><p>Daphne &#x26; Tiger.</p>
+<ul>
+<li>
+<p>Communication</p>
+</li>
+<li>
+<p>Transparency</p>
+</li>
+<li>
+<p>Teamwork</p>
+</li>
+<li>
+<p>Who does chores?</p>
+</li>
+<li>
+<p><a href="https://github.com/NotWoods/automate-our-relationship">https://github.com/NotWoods/automate-our-relationship</a> </p>
+</li>
+<li>
+<p>Recipes in Notion</p>
+</li>
+<li>
+<p>Feeding Schedule, assigning to a chart</p>
+</li>
+<li>
+<p>repeated tast -> automation</p>
+</li>
+<li>
+<p>Trello for flow</p>
+</li>
+<li>
+<p>Code is on github that generates the eating board and making the grocery list.</p>
+</li>
+</ul>
+<p>Automating meetings with a light that integrates with a person's calendar</p>
+<pre><code>- home-assistant.io
+- nodered.io
+</code></pre>
+<ul>
+<li>Zigbee hub is the best hub for using IOT because it can connect to many IOT devices</li>
+<li>Home automation is a good date idea</li>
+</ul></div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Kevinslin</span></div>
+<a href="/notes/86d5qlogeinr8vfga7onkhj" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>how we stayed together for 6 years</p>
+<ul>
+<li>communication</li>
+<li>transparency</li>
+<li>teamwork</li>
+</ul>
+</li>
+<li>
+<p>we automated all these things</p>
+</li>
+<li>
+<p>recipes</p>
+<ul>
+<li>using notion &#x26; trello</li>
+<li>copy/paste recipes into notion</li>
+<li>script to add shopping list + notion recipe list</li>
+</ul>
+</li>
+<li>
+<p>walkthrough of js code</p>
+</li>
+<li>
+<p>export to trello</p>
+</li>
+<li>
+<p>meetings</p>
+<ul>
+<li>smart lights that turn on when on a meeting</li>
+<li>connect to smart plug to toggle automatically </li>
+<li>use home assisstant api + google calendar api</li>
+<li>use nodejs event emitter functionality</li>
+<li>use nodered to make home automation easier</li>
+</ul>
+</li>
+<li>
+<p>laundry</p>
+<ul>
+<li>vibration sensor on laundry</li>
+<li>when vibration stop, send signal to google home to make announcement that washer is done</li>
+<li>use nodered</li>
+<li>vibration sensor on amazon</li>
+<li>zigbee hub</li>
+</ul>
+</li>
+<li>
+<p>automation project took communication/transparency/teamwork</p>
+</li>
+</ul>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Trivikr</span></div>
+<a href="/notes/ftktib25q09q9o5pzmfba6e" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><ul>
+<li>Tiger Oakes x Daphne Liu
+<ul>
+<li>Tiger works with Microsoft Loop.</li>
+<li>Daphne works on Lyft Web App &#x26; design systems.</li>
+</ul>
+</li>
+<li>Communication, Transparency, and Teamwork.</li>
+<li>Software solutions for not doing the chores.</li>
+<li>Talk can be used for Couples, Family, Roommates or yourself.</li>
+<li>Use Node.js, APIs and IoT for:
+<ul>
+<li>recipes</li>
+<li>meetings</li>
+<li>laundry</li>
+</ul>
+</li>
+<li>Source code is available on GitHub <a href="https://discord.com/channels/853074440069578772/1014010511278473317/1014958419024822362">https://discord.com/channels/853074440069578772/1014010511278473317/1014958419024822362</a></li>
+<li>Recipes
+<ul>
+<li>You're hungry, trying to cook or got groceries</li>
+<li>Create a recipe box on Notion, using a template</li>
+<li>Create a feeding schedule</li>
+<li>Automatically pull recipe from notion, and randomly assign lists on Trello.</li>
+<li>Notion comes with API, UI and templates</li>
+<li>Trello comes with API, UI, drag and drop features, and works offline.</li>
+<li>Talk does into details of how Notion and Trello APIs can be worked on.
+<ul>
+<li>Notion <a href="https://developers.notion.com/">https://developers.notion.com/</a></li>
+<li>Trello <a href="https://developer.atlassian.com/cloud/trello/">https://developer.atlassian.com/cloud/trello/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Meetings
+<ul>
+<li>Share home office, and it's difficult when both partners have meetings.</li>
+<li>Use Home Assitant API <a href="https://www.home-assistant.io/">https://www.home-assistant.io/</a> with Event emitters, and smart plug.</li>
+<li>Talks about how valendar event flow works, which includes filtering happens and timers are set.</li>
+<li>Use Node-RED <a href="https://nodered.org">https://nodered.org</a> for the easy drag and drop UI.</li>
+</ul>
+</li>
+<li>Laundry
+<ul>
+<li>Set up vibration motion sensor (Aquara Vibration Sensor) to check if washing is done, and remind on Google Home or send a tweet.</li>
+</ul>
+</li>
+<li>Relationships can't be automated. The key is spending time together, and having open communication.</li>
+</ul>
+</div></div><p></p><p></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/notes/89zlyj1jivc39t0ibrxz1uc">Hunt</a></li>
+<li><a href="/notes/86d5qlogeinr8vfga7onkhj">Kevinslin</a></li>
+<li><a href="/notes/ftktib25q09q9o5pzmfba6e">Trivikr</a></li>
+</ol>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #696006;" href="/notes/javascript">javascript</a></li>
+<li><a class="color-tag" style="--tag-color: #0485d1;" href="/notes/node-js">node-js</a></li>
+<li><a class="color-tag" style="--tag-color: #b96902;" href="/notes/side-projects">side-projects</a></li>
+<li><a class="color-tag" style="--tag-color: #fffa86;" href="/notes/hardware">hardware</a></li>
+<li><a class="color-tag" style="--tag-color: #fb2943;" href="/notes/iot">iot</a></li>
+<li><a class="color-tag" style="--tag-color: #0d75f8;" href="/notes/api">api</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/notes/qwdt0khxbevqlbrp67nay4w">Talks</a></li>
+</ul></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#overview" title="Overview">Overview</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#abstract" title="Abstract">Abstract</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#notes" title="Notes">Notes</a></div></div></div></div></div></div></div></div></div></main><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></section></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"daphne-liu","title":"How We Automated our Relationship","desc":"","updated":1662058061397,"created":1661898027703,"tags":["javascript","node-js","side-projects","hardware","iot","api"],"location":"Seattle, WA, USA","uri":"","twitter":"thebetterdaphne","company":"Lyft","pronouns":"she/her","enableGiscus":true,"custom":{"location":"Seattle, WA, USA","uri":"","twitter":"thebetterdaphne","company":"Lyft","pronouns":"she/her","enableGiscus":true},"fname":"talk.daphne-liu-how-we-automated-our-relationship","type":"note","vault":{"fsPath":".","selfContained":true,"name":"cascadia-js-2022"},"contentHash":"fd2f600035e37c71069394cbcb30ff0e","links":[{"type":"frontmatterTag","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"tags.javascript","alias":"javascript","xvault":false,"to":{"fname":"tags.javascript"}},{"type":"frontmatterTag","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"tags.node-js","alias":"node-js","xvault":false,"to":{"fname":"tags.node-js"}},{"type":"frontmatterTag","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"tags.side-projects","alias":"side-projects","xvault":false,"to":{"fname":"tags.side-projects"}},{"type":"frontmatterTag","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"tags.hardware","alias":"hardware","xvault":false,"to":{"fname":"tags.hardware"}},{"type":"frontmatterTag","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"tags.iot","alias":"iot","xvault":false,"to":{"fname":"tags.iot"}},{"type":"frontmatterTag","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"tags.api","alias":"api","xvault":false,"to":{"fname":"tags.api"}},{"type":"ref","from":{"fname":"talk.daphne-liu-how-we-automated-our-relationship","id":"daphne-liu","vaultName":"cascadia-js-2022"},"value":"talk.daphne-liu-how-we-automated-our-relationship.*","position":{"start":{"line":21,"column":1,"offset":727},"end":{"line":21,"column":57,"offset":783},"indent":[]},"xvault":false,"to":{"fname":"talk.daphne-liu-how-we-automated-our-relationship.*"}},{"from":{"id":"qwdt0khxbevqlbrp67nay4w","fname":"talk","vaultName":"cascadia-js-2022"},"type":"backlink","position":{"start":{"line":21,"column":3,"offset":1436},"end":{"line":21,"column":90,"offset":1523},"indent":[]},"value":"talk.daphne-liu-how-we-automated-our-relationship","alias":"How We Automated our Relationship"}],"anchors":{"overview":{"type":"header","text":"Overview","value":"overview","line":22,"column":0,"depth":2},"abstract":{"type":"header","text":"Abstract","value":"abstract","line":34,"column":0,"depth":2},"notes":{"type":"header","text":"Notes","value":"notes","line":38,"column":0,"depth":2}},"children":["89zlyj1jivc39t0ibrxz1uc","86d5qlogeinr8vfga7onkhj","ftktib25q09q9o5pzmfba6e"],"parent":"qwdt0khxbevqlbrp67nay4w","data":{}},"body":"\u003ch1 id=\"how-we-automated-our-relationship\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#how-we-automated-our-relationship\"\u003e\u003c/a\u003eHow We Automated our Relationship\u003c/h1\u003e\n\u003cblockquote\u003e\n\u003cp\u003eThe contents here is created from the official \u003ca href=\"https://2022.cascadiajs.com/speakers/daphne-liu\"\u003eCascadiaJS Page\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2 id=\"overview\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#overview\"\u003e\u003c/a\u003eOverview\u003c/h2\u003e\n\u003cp\u003e\u003cimg src=\"https://create-4jr.begin.app/_static/2022/daphne-liu.jpg\" alt=\"Daphne Liu image\" style=\"max-width:300px;\"\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ename: Daphne Liu\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://2022.cascadiajs.com/speakers/daphne-liu\"\u003eSpeaker Page\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cimg src=\"https://create-4jr.begin.app/_static/2022/tiger-oakes.jpg\" alt=\"Tiger Oakes image\" style=\"max-width:300px;\"\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ename: Tiger Oakes\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://2022.cascadiajs.com/speakers/tiger-oakes\"\u003eSpeaker Page\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"abstract\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#abstract\"\u003e\u003c/a\u003eAbstract\u003c/h2\u003e\n\u003cp\u003eWant to automate your home? Come learn how to sharpen your skills in Node, APIs, and the Internet of Things while making laundry, cooking, \u0026#x26; calendar projects that improve your life and relationship.\u003c/p\u003e\n\u003ch2 id=\"notes\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#notes\"\u003e\u003c/a\u003eNotes\u003c/h2\u003e\n\u003cp\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cdiv class=\"portal-container\"\u003e\n\u003cdiv class=\"portal-head\"\u003e\n\u003cdiv class=\"portal-backlink\"\u003e\n\u003cdiv class=\"portal-title\"\u003eFrom \u003cspan class=\"portal-text-title\"\u003eHunt\u003c/span\u003e\u003c/div\u003e\n\u003ca href=\"/notes/89zlyj1jivc39t0ibrxz1uc\" class=\"portal-arrow\"\u003eGo to text \u003cspan class=\"right-arrow\"\u003e→\u003c/span\u003e\u003c/a\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\"\u003e\n\u003cdiv class=\"portal-parent-fader-top\"\u003e\u003c/div\u003e\n\u003cdiv class=\"portal-parent-fader-bottom\"\u003e\u003c/div\u003e\u003cp\u003eDaphne \u0026#x26; Tiger.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eCommunication\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTransparency\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTeamwork\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eWho does chores?\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/NotWoods/automate-our-relationship\"\u003ehttps://github.com/NotWoods/automate-our-relationship\u003c/a\u003e \u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eRecipes in Notion\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eFeeding Schedule, assigning to a chart\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003erepeated tast -\u003e automation\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTrello for flow\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eCode is on github that generates the eating board and making the grocery list.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eAutomating meetings with a light that integrates with a person's calendar\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e- home-assistant.io\n- nodered.io\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003eZigbee hub is the best hub for using IOT because it can connect to many IOT devices\u003c/li\u003e\n\u003cli\u003eHome automation is a good date idea\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\u003c/div\u003e\u003cp\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cdiv class=\"portal-container\"\u003e\n\u003cdiv class=\"portal-head\"\u003e\n\u003cdiv class=\"portal-backlink\"\u003e\n\u003cdiv class=\"portal-title\"\u003eFrom \u003cspan class=\"portal-text-title\"\u003eKevinslin\u003c/span\u003e\u003c/div\u003e\n\u003ca href=\"/notes/86d5qlogeinr8vfga7onkhj\" class=\"portal-arrow\"\u003eGo to text \u003cspan class=\"right-arrow\"\u003e→\u003c/span\u003e\u003c/a\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\"\u003e\n\u003cdiv class=\"portal-parent-fader-top\"\u003e\u003c/div\u003e\n\u003cdiv class=\"portal-parent-fader-bottom\"\u003e\u003c/div\u003e\u003ch3 id=\"notes-by-kevin\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#notes-by-kevin\"\u003e\u003c/a\u003eNotes by \u003ca href=\"https://github.com/kevinslin\"\u003ekevin\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003ehow we stayed together for 6 years\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ecommunication\u003c/li\u003e\n\u003cli\u003etransparency\u003c/li\u003e\n\u003cli\u003eteamwork\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ewe automated all these things\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003erecipes\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eusing notion \u0026#x26; trello\u003c/li\u003e\n\u003cli\u003ecopy/paste recipes into notion\u003c/li\u003e\n\u003cli\u003escript to add shopping list + notion recipe list\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ewalkthrough of js code\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eexport to trello\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003emeetings\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003esmart lights that turn on when on a meeting\u003c/li\u003e\n\u003cli\u003econnect to smart plug to toggle automatically \u003c/li\u003e\n\u003cli\u003euse home assisstant api + google calendar api\u003c/li\u003e\n\u003cli\u003euse nodejs event emitter functionality\u003c/li\u003e\n\u003cli\u003euse nodered to make home automation easier\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003elaundry\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003evibration sensor on laundry\u003c/li\u003e\n\u003cli\u003ewhen vibration stop, send signal to google home to make announcement that washer is done\u003c/li\u003e\n\u003cli\u003euse nodered\u003c/li\u003e\n\u003cli\u003evibration sensor on amazon\u003c/li\u003e\n\u003cli\u003ezigbee hub\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eautomation project took communication/transparency/teamwork\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\u003c/div\u003e\u003cp\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cdiv class=\"portal-container\"\u003e\n\u003cdiv class=\"portal-head\"\u003e\n\u003cdiv class=\"portal-backlink\"\u003e\n\u003cdiv class=\"portal-title\"\u003eFrom \u003cspan class=\"portal-text-title\"\u003eTrivikr\u003c/span\u003e\u003c/div\u003e\n\u003ca href=\"/notes/ftktib25q09q9o5pzmfba6e\" class=\"portal-arrow\"\u003eGo to text \u003cspan class=\"right-arrow\"\u003e→\u003c/span\u003e\u003c/a\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\"\u003e\n\u003cdiv class=\"portal-parent-fader-top\"\u003e\u003c/div\u003e\n\u003cdiv class=\"portal-parent-fader-bottom\"\u003e\u003c/div\u003e\u003cul\u003e\n\u003cli\u003eTiger Oakes x Daphne Liu\n\u003cul\u003e\n\u003cli\u003eTiger works with Microsoft Loop.\u003c/li\u003e\n\u003cli\u003eDaphne works on Lyft Web App \u0026#x26; design systems.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eCommunication, Transparency, and Teamwork.\u003c/li\u003e\n\u003cli\u003eSoftware solutions for not doing the chores.\u003c/li\u003e\n\u003cli\u003eTalk can be used for Couples, Family, Roommates or yourself.\u003c/li\u003e\n\u003cli\u003eUse Node.js, APIs and IoT for:\n\u003cul\u003e\n\u003cli\u003erecipes\u003c/li\u003e\n\u003cli\u003emeetings\u003c/li\u003e\n\u003cli\u003elaundry\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSource code is available on GitHub \u003ca href=\"https://discord.com/channels/853074440069578772/1014010511278473317/1014958419024822362\"\u003ehttps://discord.com/channels/853074440069578772/1014010511278473317/1014958419024822362\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eRecipes\n\u003cul\u003e\n\u003cli\u003eYou're hungry, trying to cook or got groceries\u003c/li\u003e\n\u003cli\u003eCreate a recipe box on Notion, using a template\u003c/li\u003e\n\u003cli\u003eCreate a feeding schedule\u003c/li\u003e\n\u003cli\u003eAutomatically pull recipe from notion, and randomly assign lists on Trello.\u003c/li\u003e\n\u003cli\u003eNotion comes with API, UI and templates\u003c/li\u003e\n\u003cli\u003eTrello comes with API, UI, drag and drop features, and works offline.\u003c/li\u003e\n\u003cli\u003eTalk does into details of how Notion and Trello APIs can be worked on.\n\u003cul\u003e\n\u003cli\u003eNotion \u003ca href=\"https://developers.notion.com/\"\u003ehttps://developers.notion.com/\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eTrello \u003ca href=\"https://developer.atlassian.com/cloud/trello/\"\u003ehttps://developer.atlassian.com/cloud/trello/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eMeetings\n\u003cul\u003e\n\u003cli\u003eShare home office, and it's difficult when both partners have meetings.\u003c/li\u003e\n\u003cli\u003eUse Home Assitant API \u003ca href=\"https://www.home-assistant.io/\"\u003ehttps://www.home-assistant.io/\u003c/a\u003e with Event emitters, and smart plug.\u003c/li\u003e\n\u003cli\u003eTalks about how valendar event flow works, which includes filtering happens and timers are set.\u003c/li\u003e\n\u003cli\u003eUse Node-RED \u003ca href=\"https://nodered.org\"\u003ehttps://nodered.org\u003c/a\u003e for the easy drag and drop UI.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eLaundry\n\u003cul\u003e\n\u003cli\u003eSet up vibration motion sensor (Aquara Vibration Sensor) to check if washing is done, and remind on Google Home or send a tweet.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eRelationships can't be automated. The key is spending time together, and having open communication.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\u003c/div\u003e\u003cp\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cstrong\u003eChildren\u003c/strong\u003e\n\u003col\u003e\n\u003cli\u003e\u003ca href=\"/notes/89zlyj1jivc39t0ibrxz1uc\"\u003eHunt\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/notes/86d5qlogeinr8vfga7onkhj\"\u003eKevinslin\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/notes/ftktib25q09q9o5pzmfba6e\"\u003eTrivikr\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2 id=\"tags\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#tags\"\u003e\u003c/a\u003eTags\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003e\u003ca class=\"color-tag\" style=\"--tag-color: #696006;\" href=\"/notes/javascript\"\u003ejavascript\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"color-tag\" style=\"--tag-color: #0485d1;\" href=\"/notes/node-js\"\u003enode-js\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"color-tag\" style=\"--tag-color: #b96902;\" href=\"/notes/side-projects\"\u003eside-projects\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"color-tag\" style=\"--tag-color: #fffa86;\" href=\"/notes/hardware\"\u003ehardware\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"color-tag\" style=\"--tag-color: #fb2943;\" href=\"/notes/iot\"\u003eiot\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"color-tag\" style=\"--tag-color: #0d75f8;\" href=\"/notes/api\"\u003eapi\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003cstrong\u003eBacklinks\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/notes/qwdt0khxbevqlbrp67nay4w\"\u003eTalks\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e","noteIndex":{"id":"7ifn0jqm45dvq2e5wc6xjo2","title":"CascadiaJS 2022 Notes","desc":"","updated":1662079016319,"created":1661807247613,"custom":{"nav_order":0,"permalink":"/"},"fname":"home","type":"note","vault":{"fsPath":".","selfContained":true,"name":"cascadia-js-2022"},"contentHash":"d1bb9cdb81f32f409b0b1e63e8568150","links":[{"type":"wiki","from":{"fname":"home","id":"7ifn0jqm45dvq2e5wc6xjo2","vaultName":"cascadia-js-2022"},"value":"home.raffle","alias":"raffle","position":{"start":{"line":29,"column":206,"offset":2150},"end":{"line":29,"column":228,"offset":2172},"indent":[]},"xvault":false,"sameFile":false,"to":{"fname":"home.raffle"}},{"type":"ref","from":{"fname":"home","id":"7ifn0jqm45dvq2e5wc6xjo2","vaultName":"cascadia-js-2022"},"value":"home.user-survey","position":{"start":{"line":3,"column":1,"offset":145},"end":{"line":3,"column":29,"offset":173},"indent":[]},"xvault":false,"to":{"fname":"home.user-survey","anchorHeader":"^begin"}},{"type":"ref","from":{"fname":"home","id":"7ifn0jqm45dvq2e5wc6xjo2","vaultName":"cascadia-js-2022"},"value":"home.contributing","position":{"start":{"line":31,"column":1,"offset":2195},"end":{"line":31,"column":38,"offset":2232},"indent":[]},"xvault":false,"to":{"fname":"home.contributing","anchorHeader":"adding-notes,1"}}],"anchors":{"find-speakers-and-talks":{"type":"header","text":"Find speakers and talks","value":"find-speakers-and-talks","line":19,"column":0,"depth":2},"by-browsing":{"type":"header","text":"By Browsing","value":"by-browsing","line":21,"column":0,"depth":3},"by-lookup":{"type":"header","text":"By Lookup","value":"by-lookup","line":25,"column":0,"depth":3},"take-notes":{"type":"header","text":"Take notes","value":"take-notes","line":29,"column":0,"depth":2},"share-the-knowledge":{"type":"header","text":"Share the knowledge","value":"share-the-knowledge","line":33,"column":0,"depth":2},"be-part-of-the-conversation":{"type":"header","text":"Be part of the conversation","value":"be-part-of-the-conversation","line":39,"column":0,"depth":2},"about-us":{"type":"header","text":"About Us","value":"about-us","line":45,"column":0,"depth":2}},"children":["x84sn91kbhdc7wwc58m3ho0","lqwv7e0y39yfgymvysmgiv5","ldxrdo88lbrvvonrnfuu9h5","p0qokuilv2xqvlct6m0lx3l"],"parent":null,"data":{},"body":"\n\u003e Coming to the [Cascadia Startup Fair](https://2022.cascadiajs.com/conference/startup-fair)? Consider filling out the 2min Dendron PKM survey!\n![[home.user-survey#^begin]]\n\nWelcome traveler! You've arrived at the [Dendron](https://www.dendron.so/) workspace for [CascadiaJS 2022](https://2022.cascadiajs.com/)! Dendron is the open source knowledge base for developers. All pages here are published from plaintext markdown and managed using git and GitHub.\n\nYou can fork the [GitHub repo](https://github.com/dendronhq/cascadia-js-2022) to get offline access to all the talks of CascadiaJS 2022. \nIf you open this workspace using [VSCode](https://code.visualstudio.com/), you can use Dendron to navigate these notes as well as to add your own. \n\n![Dendron Workspace](https://ik.imagekit.io/fpjzhqpv1/Fullscreen_8_29_22__6_01_PM_-rO3FY3p9.png?ik-sdk-version=javascript-1.4.3\u0026updatedAt=1661821303348)\n\n\n## Find speakers and talks\n\n### By Browsing\n\n\u003cdiv style=\"position: relative; padding-bottom: 64.5933014354067%; height: 0;\"\u003e\u003ciframe src=\"https://www.loom.com/embed/b9b0e77e4c204550852fd372d3d9e0af\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\u003e\u003c/iframe\u003e\u003c/div\u003e\n\n### By Lookup\n\n\u003cdiv style=\"position: relative; padding-bottom: 64.5933014354067%; height: 0;\"\u003e\u003ciframe src=\"https://www.loom.com/embed/fa72444c2925431fb3e98971356fa590\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\u003e\u003c/iframe\u003e\u003c/div\u003e\n\n## Take notes\n\n\u003cdiv style=\"position: relative; padding-bottom: 64.5933014354067%; height: 0;\"\u003e\u003ciframe src=\"https://www.loom.com/embed/2ba14ecbbf9543b8a0866c3aaf55e1fb\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\u003e\u003c/iframe\u003e\u003c/div\u003e\n\n## Share the knowledge\n\nIf you feel inclined, you can also contribute your notes on talks back to this workspace by creating a pull request. Not only will this help others, every accepted pull request will also be entered into a [[raffle|home.raffle]] for an **iPad Air**!\n\n![[home.contributing#adding-notes,1]]\n\n## Be part of the conversation\n\nEvery talk has a discussions thread underneath powered by [GitHub discussions](https://giscus.app/). You can use this space to show speakers your appreciation and give feedback!\n\n\u003cdiv style=\"position: relative; padding-bottom: 64.5933014354067%; height: 0;\"\u003e\u003ciframe src=\"https://www.loom.com/embed/192095840b604cf8a2e79c78b1899572\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"\u003e\u003c/iframe\u003e\u003c/div\u003e\n\n## About Us\nDendron is a YC backed startup that wants to help **humans organize information at scale**.  We are participating in the CascadiaJS [Startup Fair](https://2022.cascadiajs.com/conference/startup-fair#dendron) - please drop by to say hi and pick up stickers and goodies!\n\n\u003e \"We are overwhelmed with information and we don't have the tools to properly index and filter through it. [The development of these tools, which] will give society access to and command over the inherited knowledge of the ages [should] be the first objective of our scientist\" - Vannevar Bush, 1945\n\n"},"collectionChildren":null,"customHeadContent":null,"config":{"version":5,"dev":{"enablePreviewV2":true,"enableSelfContainedVaults":true},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":true,"vaultSelectionModeOnCreate":"smart","leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false},"copyNoteLink":{"aliasMode":"title"},"templateHierarchy":"template"},"workspace":{"vaults":[{"fsPath":".","selfContained":true,"name":"cascadia-js-2022"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"task","dateFormat":"y.MM.dd","addBehavior":"asOwnDomain","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"taskCompleteStatus":["done","x"],"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1,"createStub":false},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"enableEditorDecorations":true,"maxPreviewsCached":10,"maxNoteLength":204800,"enableFullHierarchyNoteTitle":false,"enableSmartRefs":true},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableMermaid":true,"enablePrettyRefs":true,"enableKatex":true,"automaticallyShowPreview":false},"publishing":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableMermaid":true,"enablePrettyRefs":true,"enableKatex":true,"copyAssets":true,"siteUrl":"https://cascadiajs.dendron.so","siteIndex":"home","siteHierarchies":["home","talk","tags"],"writeStubs":false,"siteRootDir":"docs","seo":{"title":"CascadiaJS 2022 Conference","description":"Notes about the cascadiajs 2022 conference"},"github":{"enableEditLink":true,"editLinkText":"Edit this page on GitHub","editBranch":"main","editViewMode":"edit","editRepository":"https://github.com/dendronhq/cascadia-js-2022"},"enableSiteLastModified":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableRandomlyColoredTags":true,"enableTaskNotes":true,"enablePrettyLinks":true,"giscus":{"id":"comments","repo":"dendronhq/cascadia-js-2022","repoId":"R_kgDOH5vYkQ","category":"Announcements","categoryId":"DIC_kwDOH5vYkc4CRHwm","mapping":"pathname","theme":"preferred_color_scheme","strict":0,"reactionsEnabled":1,"emitMetadata":0,"inputPosition":"top","lang":"en","loading":"lazy"},"logoPath":"logo.png","ga":{"tracking":"G-VFTZJ909T3"},"siteFaviconPath":"favicon.ico"}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"daphne-liu"},"buildId":"cG4jHWN-9Ee6Vlx7UsHjM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

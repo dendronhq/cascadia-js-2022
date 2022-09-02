@@ -1,0 +1,139 @@
+<h1 id="kevinslin"><a aria-hidden="true" class="anchor-heading icon-link" href="#kevinslin"></a>Kevinslin</h1>
+<h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>cli apps</p>
+<ul>
+<li>stuff that runs on the terminal</li>
+</ul>
+</li>
+<li>
+<p>features</p>
+<ul>
+<li>options (eg. <code>ls</code>)</li>
+<li>subcommands (eg. <code>git</code>)</li>
+</ul>
+</li>
+<li>
+<p>why node</p>
+<ul>
+<li>scripting language</li>
+<li>good at json, parallel task, network request, etc</li>
+<li>lots of packages</li>
+</ul>
+</li>
+<li>
+<p>dependencies</p>
+<ul>
+<li>other code (eg. library)</li>
+<li>node does not have big standard lib</li>
+</ul>
+</li>
+<li>
+<p>are deps bad?</p>
+<ul>
+<li>depends</li>
+<li>does introduce overhead</li>
+<li>you can bundle to make it better</li>
+</ul>
+</li>
+<li>
+<p>new syntax</p>
+<ul>
+<li>using <code>import</code> (es module)</li>
+<li>import nodejs internals with <code>node:</code> prefix
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports">fs</span> <span class="token keyword module">from</span> <span class="token string">"node:fs"</span>
+</code></pre>
+</li>
+<li>every npm name is taken, we couldn't add anything new, hence new namepsace</li>
+</ul>
+</li>
+<li>
+<p>argument parsing</p>
+<ul>
+<li>old way:
+<pre class="language-js"><code class="language-js"><span class="token comment">// get everything from STDIN, split by whitespace</span>
+<span class="token comment">// eg. [node, mycli, --ls]</span>
+<span class="token keyword">const</span> args <span class="token operator">=</span> process<span class="token punctuation">.</span><span class="token property-access">argv</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>argument parsing</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>parseArgs<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:util"</span>
+<span class="token keyword">const</span> input <span class="token operator">=</span> process<span class="token punctuation">.</span><span class="token property-access">argv</span><span class="token punctuation">.</span><span class="token method function property-access">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">silent</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'boolean'</span><span class="token punctuation">,</span>
+		<span class="token literal-property property">short</span><span class="token operator">:</span> <span class="token string">'s'</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>values<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">parseArgs</span><span class="token punctuation">(</span><span class="token punctuation">{</span>input<span class="token punctuation">,</span> options<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">:</span>
+</code></pre>
+</li>
+<li>
+<p>fetch</p>
+<ul>
+<li>make http request</li>
+<li>its available in <strong>node 18</strong></li>
+<li>built on top of undici (http/1.1 client)</li>
+<li>has web streams api</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token comment">// available globally</span>
+<span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword control-flow">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"..."</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> body <span class="token operator">=</span> <span class="token keyword control-flow">await</span> response<span class="token punctuation">.</span><span class="token method function property-access">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// you get JSON</span>
+<span class="token punctuation">{</span>
+	<span class="token spread operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>
+<p>demo to add new git subcommand the old way</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// very long example</span>
+<span class="token comment">// ...</span>
+</code></pre>
+</li>
+<li>
+<p>demo with new way</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// very short example (less than 10 lines)</span>
+<span class="token comment">// ...</span>
+</code></pre>
+</li>
+<li>
+<p>test runner</p>
+<ul>
+<li>basic api to do this</li>
+<li>eg. mocha but builtin to node</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports">test</span> <span class="token keyword module">from</span> <span class="token string">"..."</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"synchornous test"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">t</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+	<span class="token comment">//...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// also works async</span>
+</code></pre>
+</li>
+<li>
+<p>recursive file system ops</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>rm<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:fs/promises"</span>
+
+<span class="token comment">// experimental </span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>cp<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:fs/promises"</span>
+
+<span class="token comment">// doesn't exist yet, open pr</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span>readdir<span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">"node:fs/promises"</span>
+</code></pre>
+</li>
+<li>
+<p>whats next</p>
+<blockquote>
+<p>DISCLAIMER: complete speculation</p>
+</blockquote>
+<ul>
+<li>glob?</li>
+<li>self contained executable</li>
+<li>typescript (lol - i wish)</li>
+</ul>
+</li>
+</ul>

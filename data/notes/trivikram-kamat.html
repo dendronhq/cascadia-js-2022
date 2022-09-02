@@ -1,0 +1,291 @@
+<h1 id="publishing-in-the-javascript-ecosystem--keeping-users-happy"><a aria-hidden="true" class="anchor-heading icon-link" href="#publishing-in-the-javascript-ecosystem--keeping-users-happy"></a>Publishing in the JavaScript Ecosystem &#x26; Keeping Users Happy</h1>
+<blockquote>
+<p>The contents here is created from the official <a href="https://2022.cascadiajs.com/speakers/trivikram-kamat">CascadiaJS Page</a></p>
+</blockquote>
+<h2 id="overview"><a aria-hidden="true" class="anchor-heading icon-link" href="#overview"></a>Overview</h2>
+<p><img src="https://create-4jr.begin.app/_static/2022/trivikram-kamat.jpg" alt="Trivikram Kamat image" style="max-width:300px;"></p>
+<ul>
+<li>name: Trivikram Kamat</li>
+<li><a href="https://2022.cascadiajs.com/speakers/trivikram-kamat">Speaker Page</a></li>
+</ul>
+<h2 id="abstract"><a aria-hidden="true" class="anchor-heading icon-link" href="#abstract"></a>Abstract</h2>
+<p>This talk will cover how your JavaScript package can support various runtimes and module formats, while keeping bundle/publish/install sizes in check and providing types/sources/source-maps.</p>
+<h2 id="notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a>Notes</h2>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Hunter</span></div>
+<a href="/notes/qejgqqhfyk0c4htjg7x37xz" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><p>(starting notes a little late)</p>
+<ul>
+<li>
+<p>bunch of criteria and it depends.</p>
+</li>
+<li>
+<p>Module formats</p>
+<ul>
+<li>defines a module</li>
+</ul>
+</li>
+<li>
+<p>Of course we should only support ESM.</p>
+</li>
+<li>
+<p>Package has a carbon footprint depending on the size of the bundle.</p>
+</li>
+<li>
+<p>Reduce publish size</p>
+<ul>
+<li>only publish required files with <code>package.json</code> 's <code>files</code> field.</li>
+</ul>
+</li>
+<li>
+<p>DefinitelyTyped will reduce package size.  <em>lol</em></p>
+</li>
+<li>
+<p>TypeScript dist tags.</p>
+<ul>
+<li>You can have a <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@variant (Private)</a> on a package name <code>@scope/&#x3C;name>@variant</code> when exporting a package.</li>
+</ul>
+</li>
+<li>
+<p>Provide ESM version of your package.</p>
+</li>
+<li>
+<p>Smaller modules</p>
+</li>
+<li>
+<p>Tree-shaking.</p>
+</li>
+<li>
+<p>Publishing a JS package:</p>
+<ul>
+<li>Small package size</li>
+<li>Observability with Open Trace (types.d.ts)</li>
+<li>Support ESM and Common JS with multiple packages.</li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Kevinslin</span></div>
+<a href="/notes/oqfads32w8vlrs3pdx831o1" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>speaker</p>
+<ul>
+<li>three-vikram</li>
+<li><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#CascadiaJS (Private)</a></li>
+</ul>
+</li>
+<li>
+<p>publishing</p>
+<ul>
+<li>browsers: </li>
+<li>servers: nodejs, deno, etc</li>
+<li>ns native: react, native, flutter</li>
+<li>module formats: cjs, esm</li>
+<li>sizes: publish, install, bundle</li>
+<li>types: flow, typescript</li>
+<li>debugging: source, sourcemap</li>
+<li>observability: open*, etc</li>
+</ul>
+</li>
+<li>
+<p>criteria to consider</p>
+<ul>
+<li>depends</li>
+</ul>
+</li>
+<li>
+<p>publishing criteria</p>
+<ul>
+<li>why, how, what</li>
+</ul>
+</li>
+<li>
+<p>browser, why?</p>
+<ul>
+<li>script on browser</li>
+<li>isn't js support fragmented on browser</li>
+<li>yes but
+<ul>
+<li>IE retired in 05/15/2022</li>
+<li>safari competitive? (lol)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>server, why</p>
+<ul>
+<li>nodejs most popular</li>
+<li>deno</li>
+<li>fragmentation?
+<ul>
+<li>web interoperable runtimes community group</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>deno, how?</p>
+<ul>
+<li>experimental npm support</li>
+</ul>
+</li>
+<li>
+<p>bun, how?</p>
+<ul>
+<li>compatible?</li>
+</ul>
+</li>
+<li>
+<p>js native, why?</p>
+<ul>
+<li>write javascript, ui framework create native apps</li>
+<li>have limitation</li>
+<li>perf tradeoffs, has become better</li>
+</ul>
+</li>
+<li>
+<p>module formats, why?</p>
+<ul>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>module formats, how?</p>
+<ul>
+<li>supporting cjs/esm, you can use esm module wrapper</li>
+<li><code>gen-esm-wrapper</code></li>
+</ul>
+</li>
+<li>
+<p>sizes (why)?</p>
+<ul>
+<li>
+<p>publish: pkg being published</p>
+</li>
+<li>
+<p>install: <code>node_modules</code> on install</p>
+</li>
+<li>
+<p>bundle: bundled artifact</p>
+</li>
+<li>
+<p>why important?</p>
+<ul>
+<li>load times</li>
+<li>constrained environments (eg. serverless)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>reducing size</p>
+<ul>
+<li>publish:
+<ul>
+<li>remove unecessary things in package.json
+<ul>
+<li>eg. move types to definitely typed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>install
+<ul>
+<li>minimal dependencies</li>
+<li>provide variant of pkg for resource-constraint environment</li>
+</ul>
+</li>
+<li>bundle
+<ul>
+<li>tree-shakeable code
+<ul>
+<li>named exports</li>
+</ul>
+</li>
+<li>publish esm version of pkg</li>
+<li>remove side effects</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>types (why)</p>
+<ul>
+<li>ts popular</li>
+<li>ecmascript proposal for type annotation</li>
+</ul>
+</li>
+<li>
+<p>debugging (why)</p>
+<ul>
+<li>you have a language that compiles to js
+<ul>
+<li>source maps for debug</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>observability (why)</p>
+<ul>
+<li>help measure state of app</li>
+</ul>
+</li>
+<li>
+<p>observability (how)</p>
+<ul>
+<li>add opentelemetry package</li>
+</ul>
+</li>
+<li>
+<p>conclusion</p>
+<ul>
+<li>brwoser: support modern browser</li>
+<li>server: nodejs with deno support</li>
+<li>js native: depends</li>
+<li>module formats: cjs+esm or esm only</li>
+<li>sizes: aim small</li>
+<li>types: publish typescript types</li>
+<li>debuggign: provide sources</li>
+<li>observability: add hook to open telemetry</li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/notes/qejgqqhfyk0c4htjg7x37xz">Hunter</a></li>
+<li><a href="/notes/oqfads32w8vlrs3pdx831o1">Kevinslin</a></li>
+</ol>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #0485d1;" href="/notes/node-js">node-js</a></li>
+<li><a class="color-tag" style="--tag-color: #836539;" href="/notes/npm">npm</a></li>
+<li><a class="color-tag" style="--tag-color: #696006;" href="/notes/javascript">javascript</a></li>
+<li><a class="color-tag" style="--tag-color: #9dff00;" href="/notes/commonjs">commonjs</a></li>
+<li><a class="color-tag" style="--tag-color: #f504c9;" href="/notes/ecmascript">ecmascript</a></li>
+<li><a class="color-tag" style="--tag-color: #25ff29;" href="/notes/typescript">typescript</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/notes/qwdt0khxbevqlbrp67nay4w">Talks</a></li>
+</ul>

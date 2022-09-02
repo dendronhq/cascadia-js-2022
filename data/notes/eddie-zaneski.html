@@ -1,0 +1,221 @@
+<h1 id="cryptography-isnt-scary"><a aria-hidden="true" class="anchor-heading icon-link" href="#cryptography-isnt-scary"></a>Cryptography Isn't Scary</h1>
+<blockquote>
+<p>The contents here is created from the official <a href="https://2022.cascadiajs.com/speakers/eddie-zaneski">CascadiaJS Page</a></p>
+</blockquote>
+<h2 id="overview"><a aria-hidden="true" class="anchor-heading icon-link" href="#overview"></a>Overview</h2>
+<p><img src="https://create-4jr.begin.app/_static/2022/eddie-zaneski.jpg" alt="Eddie Zaneski image" style="max-width:300px;"></p>
+<ul>
+<li>name: Eddie Zaneski</li>
+<li><a href="https://2022.cascadiajs.com/speakers/eddie-zaneski">Speaker Page</a></li>
+</ul>
+<h2 id="abstract"><a aria-hidden="true" class="anchor-heading icon-link" href="#abstract"></a>Abstract</h2>
+<p>Cryptography isn't scary, it's fun! Join for a crash course in modern cryptography. Learn what's available in Node and the browser along with how we are securing the software supply chain.</p>
+<h2 id="notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a>Notes</h2>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Aminamos</span></div>
+<a href="/notes/c5ulkibl6sn5cl4qi7yae54" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h2 id="notes-by-aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-aminamos"></a>Notes by <a href="https://github.com/aminamos">aminamos</a></h2>
+<ul>
+<li>symmetric, asymmetric, one-way functions, pseudorandom number generators</li>
+<li>RSA
+<ul>
+<li>time to phase this out</li>
+<li>prime factorization</li>
+</ul>
+</li>
+<li>modular arithmetic is a one-way function</li>
+<li>ECC elliptic curve cryptogrpahy
+<ul>
+<li>allows shorter key lengths but more security</li>
+</ul>
+</li>
+<li>DHKE</li>
+<li>web crypto API <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API">https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API</a></li>
+<li>SubtleCrypto <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API">https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API</a></li>
+<li>Dual_EC_DRBG <a href="https://en.wikipedia.org/wiki/Dual_EC_DRBG">https://en.wikipedia.org/wiki/Dual_EC_DRBG</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=nybVFJVXbww">https://www.youtube.com/watch?v=nybVFJVXbww</a></li>
+</ul>
+</li>
+<li>Sigstore - Let's Encrypt for signing</li>
+</ul>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Hunter</span></div>
+<a href="/notes/k1xroh0xsqdbro3w2k3vrbd" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><ul>
+<li>
+<p>works at chainguard using kuberneties</p>
+</li>
+<li>
+<p>don't roll your own cryptography</p>
+</li>
+<li>
+<p>RSA isn't the bees knees anymore</p>
+</li>
+<li>
+<p>Modular Arithmetic</p>
+<ul>
+<li>"one way door"</li>
+</ul>
+</li>
+<li>
+<p>Eliptic Curve Cryptography</p>
+<ul>
+<li>also one way door.  AFAIK it's the backbone of blockchain</li>
+<li><code>y^2 = x^2 + ax + b</code></li>
+<li>used in the generation of a public and a private key</li>
+</ul>
+</li>
+<li>
+<p>Diffie Hellman Key Exchange</p>
+</li>
+<li>
+<p><code>import crypto from 'node:crypto</code></p>
+<ul>
+<li>Sample Diffie Hellman Key Exchange code sample...</li>
+</ul>
+</li>
+<li>
+<p><code>getRandomValues(TypedArray)</code>, <code>randomUUID()</code>, <code>subltle</code></p>
+<ul>
+<li>Why subtle?  Easy to shoot yourself in the foot.</li>
+</ul>
+</li>
+<li>
+<p>NSA's cryptography function scandal <code>Dual_EC_DRBG</code>.</p>
+<ul>
+<li>require usage of P and Q</li>
+<li>NSA knows <code>e</code>?</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sigstore.dev">https://sigstore.dev</a></p>
+<ul>
+<li>OSS</li>
+<li>Let's Encrypt for signing</li>
+<li>Fulcio: keyless signing</li>
+<li>Rekor: transparency log</li>
+<li>Cosign: Container signing</li>
+<li>A tool for signing and verifying npm packages</li>
+</ul>
+</li>
+<li>
+<p>npm RFC 626: linking packages to source and build</p>
+<ul>
+<li>proof of where package was built</li>
+</ul>
+</li>
+</ul>
+<h2 id="presentation-notes"><a aria-hidden="true" class="anchor-heading icon-link" href="#presentation-notes"></a>Presentation Notes</h2>
+<ul>
+<li>full of nice gif memes.</li>
+</ul>
+<p><a href="https://bit.ly/3pZwLzG">slides</a></p>
+<p>Recommends the <a href="https://www.youtube.com/user/Computerphile">computerphile youtube channel</a>.</p>
+</div></div><p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Kevinslin</span></div>
+<a href="/notes/zp43ghk7kgw09ntph3wf4dn" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>disclaimer: don't try this at home</p>
+</li>
+<li>
+<p>symmetric keys: everyone has key</p>
+</li>
+<li>
+<p>asymmetric key (public key cryptography): only share public key</p>
+</li>
+<li>
+<p>one way functions: hard to reverse operation</p>
+</li>
+<li>
+<p>pseudorandom number generators: sources of entrophy</p>
+</li>
+<li>
+<p>rsa</p>
+<ul>
+<li>great when it came out, not recommended anymore</li>
+</ul>
+</li>
+<li>
+<p>modular arithmetic</p>
+<ul>
+<li>% operator in javascript</li>
+</ul>
+</li>
+<li>
+<p>elliptic curve cryptography (ecc)</p>
+</li>
+<li>
+<p>why ecc</p>
+<ul>
+<li>rsa needed to increase bit length to make stronger</li>
+<li>ecc scales better</li>
+</ul>
+</li>
+<li>
+<p>diffie hellman key exchange</p>
+<ul>
+<li>agree over symmetric key in insecure channel</li>
+<li>eg. ssh </li>
+</ul>
+</li>
+<li>
+<p>web crypto api</p>
+<ul>
+<li>built into browser</li>
+</ul>
+</li>
+<li>
+<p>nsa backdoor</p>
+<ul>
+<li>pseudo random number generator that is broken by design</li>
+<li>believed that nsa has backdoor</li>
+</ul>
+</li>
+<li>
+<p>sigstore</p>
+<ul>
+<li>new standard for signing, verifying, and protecting software</li>
+<li>lets encrypt for signing</li>
+</ul>
+</li>
+</ul>
+</div></div><p></p><p></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/notes/c5ulkibl6sn5cl4qi7yae54">Aminamos</a></li>
+<li><a href="/notes/k1xroh0xsqdbro3w2k3vrbd">Hunter</a></li>
+<li><a href="/notes/zp43ghk7kgw09ntph3wf4dn">Kevinslin</a></li>
+</ol>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #7a687f;" href="/notes/cryptography">cryptography</a></li>
+<li><a class="color-tag" style="--tag-color: #2a7e19;" href="/notes/software-supply-chain">software-supply-chain</a></li>
+<li><a class="color-tag" style="--tag-color: #fffeb6;" href="/notes/code-signing">code-signing</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/notes/qwdt0khxbevqlbrp67nay4w">Talks</a></li>
+</ul>

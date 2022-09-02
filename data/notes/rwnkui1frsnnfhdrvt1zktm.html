@@ -1,0 +1,47 @@
+<h1 id="hunt"><a aria-hidden="true" class="anchor-heading icon-link" href="#hunt"></a>Hunt</h1>
+<p><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@polesdesfetes (Private)</a></p>
+<p>Staff engineer at Data Dog.</p>
+<p>V8 Engine</p>
+<ul>
+<li>Takes JS as input and executes it</li>
+<li>Createed by Google, open source, C++
+<ul>
+<li><a href="https://chromium.googlesource.com/v8/v8.git">https://chromium.googlesource.com/v8/v8.git</a></li>
+</ul>
+</li>
+<li><a href="https://v8.dev">good resource</a></li>
+<li><code>document</code> is not defined in V8</li>
+<li>Doesn't just interpret JS
+<ul>
+<li>Parse to AST</li>
+<li>Ignition: bytecode generation</li>
+<li>Sparkplug: fast codegen</li>
+<li>Turbofan: optimized codegen</li>
+<li>reminder you can define numbers as <code>1_000_000</code> in js
+<ul>
+<li><a href="https://www.javascripttutorial.net/es-next/javascript-numeric-separator/">underscore in numbers</a></li>
+</ul>
+</li>
+<li>objects have a Map, a hidden class.</li>
+<li>what is % in fromnt of functions?  It's "Native syntaxes". <code>console.log(%MaxSmi())</code></li>
+<li>You can set V8 flages with node using <code>require('v8').setFlags (?) ('--flag')</code></li>
+<li>Native syntax: undocumented V8 APIs.</li>
+<li>Benchmark JS for testing optimizations... optimizations DO matter, up to 2x faster for a simple add function.</li>
+<li><code>V8OptimizationStoatus()</code> to get the status of optimization</li>
+<li>How do debuggers work?
+<ul>
+<li>Chrome Debug Protocol
+<ul>
+<li>Has a Heap profiler and CPU profiler
+<ul>
+<li>CPU profiling is done with polling, similar to the <code>top</code> program (?)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See the Torque language which compiles directly into v8 bytecode. <a href="https://v8.dev/docs/torque">torque</a></li>
+</ul>
+</li>
+</ul>

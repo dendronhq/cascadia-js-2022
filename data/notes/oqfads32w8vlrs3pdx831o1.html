@@ -1,0 +1,190 @@
+<h1 id="kevinslin"><a aria-hidden="true" class="anchor-heading icon-link" href="#kevinslin"></a>Kevinslin</h1>
+<h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>speaker</p>
+<ul>
+<li>three-vikram</li>
+<li><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#CascadiaJS (Private)</a></li>
+</ul>
+</li>
+<li>
+<p>publishing</p>
+<ul>
+<li>browsers: </li>
+<li>servers: nodejs, deno, etc</li>
+<li>ns native: react, native, flutter</li>
+<li>module formats: cjs, esm</li>
+<li>sizes: publish, install, bundle</li>
+<li>types: flow, typescript</li>
+<li>debugging: source, sourcemap</li>
+<li>observability: open*, etc</li>
+</ul>
+</li>
+<li>
+<p>criteria to consider</p>
+<ul>
+<li>depends</li>
+</ul>
+</li>
+<li>
+<p>publishing criteria</p>
+<ul>
+<li>why, how, what</li>
+</ul>
+</li>
+<li>
+<p>browser, why?</p>
+<ul>
+<li>script on browser</li>
+<li>isn't js support fragmented on browser</li>
+<li>yes but
+<ul>
+<li>IE retired in 05/15/2022</li>
+<li>safari competitive? (lol)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>server, why</p>
+<ul>
+<li>nodejs most popular</li>
+<li>deno</li>
+<li>fragmentation?
+<ul>
+<li>web interoperable runtimes community group</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>deno, how?</p>
+<ul>
+<li>experimental npm support</li>
+</ul>
+</li>
+<li>
+<p>bun, how?</p>
+<ul>
+<li>compatible?</li>
+</ul>
+</li>
+<li>
+<p>js native, why?</p>
+<ul>
+<li>write javascript, ui framework create native apps</li>
+<li>have limitation</li>
+<li>perf tradeoffs, has become better</li>
+</ul>
+</li>
+<li>
+<p>module formats, why?</p>
+<ul>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>module formats, how?</p>
+<ul>
+<li>supporting cjs/esm, you can use esm module wrapper</li>
+<li><code>gen-esm-wrapper</code></li>
+</ul>
+</li>
+<li>
+<p>sizes (why)?</p>
+<ul>
+<li>
+<p>publish: pkg being published</p>
+</li>
+<li>
+<p>install: <code>node_modules</code> on install</p>
+</li>
+<li>
+<p>bundle: bundled artifact</p>
+</li>
+<li>
+<p>why important?</p>
+<ul>
+<li>load times</li>
+<li>constrained environments (eg. serverless)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>reducing size</p>
+<ul>
+<li>publish:
+<ul>
+<li>remove unecessary things in package.json
+<ul>
+<li>eg. move types to definitely typed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>install
+<ul>
+<li>minimal dependencies</li>
+<li>provide variant of pkg for resource-constraint environment</li>
+</ul>
+</li>
+<li>bundle
+<ul>
+<li>tree-shakeable code
+<ul>
+<li>named exports</li>
+</ul>
+</li>
+<li>publish esm version of pkg</li>
+<li>remove side effects</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>types (why)</p>
+<ul>
+<li>ts popular</li>
+<li>ecmascript proposal for type annotation</li>
+</ul>
+</li>
+<li>
+<p>debugging (why)</p>
+<ul>
+<li>you have a language that compiles to js
+<ul>
+<li>source maps for debug</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>observability (why)</p>
+<ul>
+<li>help measure state of app</li>
+</ul>
+</li>
+<li>
+<p>observability (how)</p>
+<ul>
+<li>add opentelemetry package</li>
+</ul>
+</li>
+<li>
+<p>conclusion</p>
+<ul>
+<li>brwoser: support modern browser</li>
+<li>server: nodejs with deno support</li>
+<li>js native: depends</li>
+<li>module formats: cjs+esm or esm only</li>
+<li>sizes: aim small</li>
+<li>types: publish typescript types</li>
+<li>debuggign: provide sources</li>
+<li>observability: add hook to open telemetry</li>
+</ul>
+</li>
+</ul>

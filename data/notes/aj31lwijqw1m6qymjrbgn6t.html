@@ -1,0 +1,184 @@
+<h1 id="kevinslin"><a aria-hidden="true" class="anchor-heading icon-link" href="#kevinslin"></a>Kevinslin</h1>
+<h3 id="notes-by-kevin"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-kevin"></a>Notes by <a href="https://github.com/kevinslin">kevin</a></h3>
+<ul>
+<li>
+<p>javascript engine</p>
+<ul>
+<li>multiple engines: v8, spidermonkey, apple jscriptcore</li>
+</ul>
+</li>
+<li>
+<p>v8 executes js in context</p>
+<ul>
+<li>ecmascript web specs not part of v8</li>
+<li>chromium embeds v8 and provides DOM apis</li>
+<li>node embeds v8 and provides system apis</li>
+<li>ruby racer embeds v8 to call js from ruby</li>
+</ul>
+</li>
+<li>
+<p>v8 does not just interpret js</p>
+<ul>
+<li>many parts
+<ul>
+<li>parse, optimization, codegen</li>
+<li>turbofan: part that optimize code</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>optimizing</p>
+<ul>
+<li>what v8 mainly optimizes
+<ul>
+<li>inlinable functions </li>
+<li>function with stable signature</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>functions example</p>
+<ul>
+<li><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#todo (Private)</a></li>
+</ul>
+</li>
+<li>
+<p>objects example</p>
+<ul>
+<li>getObject 1e6 times</li>
+<li>to optimize object, requires
+<ul>
+<li>same fields with same type</li>
+<li>types crated in same order</li>
+</ul>
+</li>
+<li>calling same object initialized with object of different order will stop optimizations</li>
+</ul>
+</li>
+<li>
+<p>native funciton syntax <code>%</code></p>
+<ul>
+<li>run v8 with <code>--allow-native-syntax</code>
+<blockquote>
+<p>TIP: you can set v8 flags inside nodejs</p>
+</blockquote>
+</li>
+<li>native syntax are undocumented v8 apis, used for testing and debugging
+<ul>
+<li>you can find the v8 source</li>
+<li>docs are in v8 tests</li>
+</ul>
+</li>
+<li>can used to manipulate optimization (eg. never optimize this function)</li>
+</ul>
+</li>
+<li>
+<p>what can i do with native functions?</p>
+</li>
+<li>
+<p>question1: are optimized functions faster?</p>
+<ul>
+<li>benchmarkjs to test</li>
+</ul>
+</li>
+<li>
+<p>question2: check optimization status of a function within code</p>
+<ul>
+<li>print to debug</li>
+<li>if you keep opt/de-opt function, v8 will give up on your code </li>
+</ul>
+</li>
+<li>
+<p>question3: can i manipulate memory related stuff</p>
+<ul>
+<li>yes, but please do it</li>
+</ul>
+</li>
+<li>
+<p>how does devtools work</p>
+<ul>
+<li>chrome debug protocol
+<ul>
+<li>websockets</li>
+<li>communicate with v8/chromium</li>
+<li>access debug interface:
+<ul>
+<li>debugger</li>
+<li>heap profiler</li>
+<li>cpu profiling/code coverage</li>
+<li>dom (browser only)</li>
+<li>eg. playwright uses this</li>
+<li>eg. remote debug node</li>
+</ul>
+</li>
+<li>gives access to <strong>everything</strong> in node process</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>debug protocol</p>
+<ul>
+<li>cpu profiling is polling based</li>
+<li>control polling rate from protocol (not available in dev tools)</li>
+</ul>
+</li>
+<li>
+<p>heap profiler</p>
+<ul>
+<li>show everything in heap</li>
+<li>eg. find memory leak</li>
+</ul>
+</li>
+<li>
+<p>why</p>
+<ul>
+<li>remote debugging</li>
+<li>atuomated diagnostics</li>
+<li>script debugging
+<ul>
+<li>eg. add breakpoint</li>
+<li>execute code and check heap</li>
+<li>canbe used in extensions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>other topics</p>
+<ul>
+<li>v8 inlining</li>
+<li>torque language</li>
+<li>v8 treats web assembly</li>
+<li>how v8 manages strings</li>
+<li>etc</li>
+<li>most of this is on <a href="https://v8.dev/">https://v8.dev/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="notes-by-aminamos"><a aria-hidden="true" class="anchor-heading icon-link" href="#notes-by-aminamos"></a>Notes by <a href="https://github.com/aminamos">aminamos</a></h2>
+<ul>
+<li>v8 is a JS engine
+<ul>
+<li>the engine takes JS code as an input and executes it</li>
+</ul>
+</li>
+<li>v8 is one of many engines</li>
+<li>DOM manipulation APIs are not defined in v8</li>
+<li>node embeds v8 and has JS APIs</li>
+<li>v8 is embedded (ruby, deno examples)</li>
+<li>turbofan, sparkplug, ignition</li>
+<li>[discussion around code optimiziation, de-optimization, re-optimization]</li>
+<li>are optimized functions better? yes</li>
+<li>can I check optimization status of a function in the code? yes</li>
+<li>chrome debug protocol convo, CPU profiling is polling based (and this rate is configurable)</li>
+<li>can get heap dump, then dig into info in dev tools (all objects, all streams that are currently alive)</li>
+<li>other toppics
+<ul>
+<li>v8 code inilining, WebAssembly, string management, torque language, v8 snapshots</li>
+<li>check out <a href="https://v8.dev/">https://v8.dev/</a></li>
+</ul>
+</li>
+</ul>
